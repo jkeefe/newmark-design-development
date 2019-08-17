@@ -1,8 +1,12 @@
 [The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.html) | [The Notes](./THE_NOTES.html)
 
-Welcome to the Prototyping Lab, updated for the Spring 2019 term.
+Welcome to Design & Development, updated for the Fall 2019 term.
 
-Product-making is exceptionally important to journalism, especially today. This class is an excellent opportunity to get experience building and testing product experiments. 
+You don't need to be a developer to come up with the next big idea for a product or service that connects communities digitally, or taps a way to collect information that helps communities make decisions. But you do need basic knowledge of design and digital structure so you can work with developers and bring your idea from concept to implementation.
+
+Plus, with a little know-how you can build functioning prototypes to help test and play with your idea -- providing an example with which you can then work with a developer to create a robust, secure and efficient product or service.
+
+This course prepares students to work successfully with designers and developers -- from understanding fundamental design principles, to embracing programmers’ unique coding culture, to having a general knowledge of various programming languages, to knowing the steps and milestones that designers and developers expect to have clearly delineated for them by their clients.
 
 We're going to learn how to play, experiment, learn, and tinker as we toy with new ways to experience and consume information. This is a hands-on class, and participation is key. Let's have some fun and make great things -- or at least learn a lot trying.
 
@@ -10,9 +14,21 @@ We're going to learn how to play, experiment, learn, and tinker as we toy with n
 
 The class description, logistics, rules, and grading details are in a document I call "[the fine print](./THE_FINE_PRINT.md)."
 
+# The Notes
+
+Along the way, the code and steps we'll take are outlined in [The Notes](./THE_NOTES.md).
+
 # The Plan
 
-Also known as the syllabus, here's the rundown of what we'll cover in our weeks together.
+Also known as the syllabus, here's the rundown of what we'll cover in our weeks together:
+
+## How the internet works ... a review!
+
+- Let's make sure we all understand how that information zips around
+- Build a website in minutes
+- Play with JavaScript in a few more
+- Understand 
+
 
 ## Make bots to do your bidding
 

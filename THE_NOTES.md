@@ -1,5 +1,7 @@
 [The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.html) | [The Notes](./THE_NOTES.html)
 
+**[UNDER CONSTRUCTION! SUBJECT TO CHANGE! This page is currently being modified for the Fall 2019 term.]**
+
 # The Notes
 
 Here's where you'll find resources and class notes for every section.
@@ -12,10 +14,10 @@ Here's where you'll find resources and class notes for every section.
     - [Personal website](https://johnkeefe.net)
     - [Work website](https://qz.com)
     - [Quartz Bot Studio](https://bots.qz.com)
-    - [Quartz AI Studio](https://qz.com/1464390/)
+    - [Quartz AI Studio](https://qz.ai/)
     - Twitter: [@jkeefe](https://twitter.com/jkeefe)
     - Email: john.keefe (at) journalism.cuny.edu
-    - Slack is better! [Here's our Slack](https://cunylab.slack.com).
+    - Slack is better! [Here's our Slack](https://socialjournalism2019.slack.com).
     
 ## Products in Journalism
 
@@ -24,7 +26,7 @@ Here's where you'll find resources and class notes for every section.
 - A bit about you
     - Name
     - Where you're from
-    - What's your product?
+    - What's your Social J area of interest?
 
 ## What's a Prototype (for us)?
 

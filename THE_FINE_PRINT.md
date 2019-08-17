@@ -20,21 +20,25 @@ We're going to learn how to play, experiment, learn and tinker -- all with the g
 
 ### The Schedule
 
-We meet every Wednesday from 5:30 to 8:20 pm, including a break. Since we're at prime dinner time, feel free to bring food and drink to the extent allowed in the classroom. 
+We meet every Monday from 5:30 to 8:20 pm, including a break. Since we're at prime dinner time, feel free to bring food and drink to the extent allowed in the classroom. 
 
 There will be assignments most weeks, usually due by noon on the day of the next class.
 
-One of the assignments will be a detailed description of what you envision for your prototyping project. That description will be due **April 3, 2019**.
+One of the assignments will be a detailed description of what you envision for your prototyping project. That description will be due **TK**.
 
-Individual project planning sessions will be scheduled for **Monday, April 8, 2019**. 
+Our first class is **THURSDAY, September 5, 2019 at 5:20 pm**
 
-There is **no class on April 17, 2019** because I'll be off site.
+Our second class is **September 9, 2019 at 5:20 pm**. 
 
-There is **no class on April 24, 2019** for Spring break.
+Individual project planning sessions will be scheduled for **TBD**. 
 
-Final presentation rehearsals are **May 8, 2019** in class.
+There is **no class September 30, 2019**.
 
-Final presentations are **May 15, 2019**. Time TBD.
+There is **no class on October 14, 2019** for Columbus Day. This class will be held **WEDNESDAY, September 16, 2019** instead.
+
+Final presentation rehearsals are **December 9, 2019** in class.
+
+Final presentations are **December 16, 2019**. Time TBD.
 
 ### Computers in Class
 
@@ -48,7 +52,7 @@ Let's strive for a no-email class. We'll communicate using Slack, like just abou
 
 Slack is also a great platform for experimentation and prototyping, and we'll be doing some of that, too.
 
-Our Slack is [cunylab.slack.com](https://cunylab.slack.com)
+Our Slack is [socialjournalism2019.slack.com](https://socialjournalism2019.slack.com) and the channel is `#design-dev`.
 
 ## Assignments
 
@@ -65,10 +69,10 @@ The last week of class you will present your prototyping path and show your resu
 Specifically, you'll need to show:
 
 * Your intended audience and initial goal
-* Your key prototyping steps
+* The key steps you took
 * How you shared it with others, and the key feedback you got
 * What worked, what didn't work, and changes you made
-* A demo of your prototype
+* A prototype demo of your product
 * Your next steps
 
 To make this incredibly easy to pull off, I highly recommend you keep a log, diary, notebook, blog, Google document, or plain old text file that tracks your thinking along the way. Just keep a chronological document noting:
@@ -105,6 +109,8 @@ There are 100 points possible in this class.
 
 ## Plagiarism
 
+Plagiarism is the use of another’s ideas or words, video or recordings or ideas without properly and clearly acknowledging the source of the information.
+
 This is a journalism class; facts and honesty are our greatest asset. Presenting the work of others as your own is wrong and won't be tolerated. Doing so may result in a significant reduction of accumulated points and possible failure of the class.
 
 When using code or ideas from other sources -- even free, open-sourced code -- be sure to include references and links back to that code and any applicable licenses.
@@ -112,5 +118,14 @@ When using code or ideas from other sources -- even free, open-sourced code -- b
 If you are inspired by others, note it. It's just right.
 
 And when working on teams, you may be asked to honestly note the specific and/or relative contributions of each teammate.
+
+Please note that other forms of academic dishonesty include:
+
+- Unauthorized collaboration.
+- Fabrication of information, quotes or sources.
+- Impeding the work of others.
+
+
+
 
 
