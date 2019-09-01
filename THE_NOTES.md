@@ -1,10 +1,8 @@
 [The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.html) | [The Notes](./THE_NOTES.html)
 
-**[UNDER CONSTRUCTION! SUBJECT TO CHANGE! This page is currently being modified for the Fall 2019 term.]**
-
 # The Notes
 
-Here's where you'll find resources, code, links, and notes for every class. Materials are updated here generally at least one day before each class.
+Here's where you'll find resources, code, links, and notes for every class. Materials are added here generally at least one day before each class, but can change and get updated up until class time.
 
 <a name="class1"></a>
 
@@ -54,4 +52,3 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 - Grading options
 - Everyone in the Slack! [Join here](https://join.slack.com/t/cunylab/signup) and use your school email address.
 
-## 
