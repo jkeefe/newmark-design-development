@@ -14,37 +14,61 @@ This laboratory is great for anyone who wants to have an edge in the changing me
 
 ## Spirit
 
-We're going to learn how to play, experiment, learn and tinker -- all with the goal of making new ways to experience and consume information. This is a hands-on class, and participation is key. Let's have some fun and make great things.
+We're going to learn how to play, experiment, learn and tinker -- all with the goal of exploring new ways to experience and consume information. This is a hands-on class, and participation is key. Let's have some fun and make great things.
 
 ## Logistics
 
 ### The Schedule
 
-We meet every Monday from 5:30 to 8:20 pm, including a break. Since we're at prime dinner time, feel free to bring food and drink to the extent allowed in the classroom. 
+We generally meet in Room 432 every Monday from 5:30 to 8:20 pm, including a break. That said, there are several modifications to that due to holidays and other factors, so check out the dates below.
 
-There will be assignments most weeks, usually due by noon on the day of the next class.
+Since we're at prime dinner time, feel free to bring food and drink to the extent allowed in the classroom. 
+ 
 
-One of the assignments will be a detailed description of what you envision for your prototyping project. That description will be due **TK**.
+#### Important Dates
 
-Our first class is **THURSDAY, September 5, 2019 at 5:20 pm**
+- **Thursday** September 5, 2019 at 5:20 pm • Class 1
 
-Our second class is **September 9, 2019 at 5:20 pm**. 
+- Monday, September 9, 2019 at 5:20 pm • Jeremy Caplan will teach his class at this time, in our regular location, Room 432. 
 
-Individual project planning sessions will be scheduled for **TBD**. 
+- Monday, September 16 at 5:20 pm • Class 2
 
-There is **no class September 30, 2019**.
+- Monday, September 23 at 5:20 pm • Class 3
 
-There is **no class on October 14, 2019** for Columbus Day. This class will be held **WEDNESDAY, September 16, 2019** instead.
+- **Thursday, September 26 at 9:30 am** • Class 4 in the time slot and room you usually have Jeremy Caplan's class.
 
-Final presentation rehearsals are **December 9, 2019** in class.
+- Monday, September 30 • **no class**
 
-Final presentations are **December 16, 2019**. Time TBD.
+- Monday, October 7 at 5:20 pm • Class 5
+
+- Monday, October 14 • **no class**
+
+- **Wednesday**, October 16 at 5:20 pm • Class 6
+
+- Monday, October 21 at 5:20 pm • Class 7
+
+- Monday, October 28 at 5:20 pm • Class 8
+
+- Monday, November 4 at 5:20 pm • Class 9
+
+- Monday, November 12 at 5:20 pm • Class 10
+
+- Monday, November 18 at 5:20 pm • Class 11
+
+- Monday, November 25 at 5:20 pm • Class 12
+
+- Monday, December 2 at 5:20 pm • Class 13
+
+- Monday, December 9 at 5:20 pm • Class 14
+
+- Monday, December 16 at 5:20 pm • Class 15
+
 
 ### Computers in Class
 
 Bring them! You'll use your computer in almost every class.
 
-Be here now. Please don't email, tweet, chat or communicate with people outside the class during class. Your participation with other classmates is key. If you must take a call or a text for an urgent issue, please step out of the room.
+Be here now. Please don't email, DM, tweet, chat or otherwise communicate with people outside the class during class. Your participation with other classmates is key. If you must take a call or a text for an urgent issue, please step out of the room.
 
 ### Slack for Communications
 
@@ -56,43 +80,15 @@ Our Slack is [socialjournalism2019.slack.com](https://socialjournalism2019.slack
 
 ## Assignments
 
-Most weeks will have one assignment, due to me via Slack by noon the day of our next class. Feedback on each assignment will be provided every week in class or via Slack.
-
-## Project & Presentation
-
-From the first day of class, you should be thinking about what you'd like to make. Maybe its an idea you get from the class discussion. Maybe it's a part of your degree project. Maybe it's a component of a project you've already started. Maybe it's just something fun you'd like to build. 
-
-By mid term, you should have a plan in hand -- in fact, you'll have to hand it in. The latter part of the term you will be expected to work on that project on your own time, though in-class discussion and office-hours guidance will be available.
-
-The last week of class you will present your prototyping path and show your results. Your greatest success will be secured if you _document the process_, _show your work_ and _explain your thinking_. This is not about having a finished product, it's about having a working prototype and an explanation of how you got there.
-
-Specifically, you'll need to show:
-
-* Your intended audience and initial goal
-* The key steps you took
-* How you shared it with others, and the key feedback you got
-* What worked, what didn't work, and changes you made
-* A prototype demo of your product
-* Your next steps
-
-To make this incredibly easy to pull off, I highly recommend you keep a log, diary, notebook, blog, Google document, or plain old text file that tracks your thinking along the way. Just keep a chronological document noting:
-
-- Your latest ideas for what you'd like to try building
-- The links, documents, and videos you check out along the way
-- Screenshots or photos of things you tried, drew, built, saw
-- Steps you took, things that worked, things that didn't
-- Your changes in direction, your narrowing of focus, your flat-out failures
-
-If you actually pull that information together every week, by the end of class the presentation will almost make itself.
+There will be one assignment given in each class, due to me via Slack by noon the day of our next class. My intention is that most work for these assignments can be completed in class.
 
 ## Grading
 
-There are 100 points possible in this class.
+There are 100 points possible.
 
-* **Final presentation:** 30 points possible, based on the criteria set out above.
-* **Attendance:** 30 points possible, 2 points for each class or planning session attended. 
-* **Assignments:** 20 points possible, 2 points for awarded for each assignment completed. Incomplete or low-effort submissions will get a 1. Assignments not turned in by noon on the day of the class for which they were assigned will lose one point.
-* **Participation & Progress:** 20 points possible. This will be scored based on your active participation in class and your active progress on your project. Note that absences will naturally cut into your participation score.
+* **Attendance:** 45 points possible, 3 points for each class attended. 
+* **Assignments:** 45 points possible, 3 points for each assignment successfully completed. Incomplete or low-effort submissions will get 1 or 2 points. Assignments turned in after noon on the due date receive 1 point.
+* **Participation & Progress:** 10 points possible. This will be scored based on your active participation and contribution in class. Note that absences will naturally cut into your participation score.
 
 | Points | Grade |
 | ------ | ----- |
@@ -122,7 +118,7 @@ And when working on teams, you may be asked to honestly note the specific and/or
 Please note that other forms of academic dishonesty include:
 
 - Unauthorized collaboration.
-- Fabrication of information, quotes or sources.
+- Fabrication of information, quotes, or sources.
 - Impeding the work of others.
 
 

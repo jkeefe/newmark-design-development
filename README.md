@@ -22,13 +22,26 @@ Along the way, the code and steps we'll take are outlined in [The Notes](./THE_N
 
 Also known as the syllabus, here's the rundown of what we'll cover in our weeks together:
 
-## How the internet works ... a review!
+## 1. How the internet works
 
 - Let's make sure we all understand how that information zips around
-- Build a website in minutes
-- Play with JavaScript in a few more
-- Understand 
+- We'll build and dissect a simple website in minutes
+- In a few more, we'll build and dissect a dynamic website. 
 
+## 2. Build a texting service
+
+We'll learn how to set up a simple texting system, and then use our fabulous website to make it more interesting.
+
+## 3. Making a smarter service
+
+We can make our service even more interesting with a simple database. 
+
+## 4. APIs
+
+## 5. Conversational interface intro
+
+
+## 6. 
 
 ## Make bots to do your bidding
 
@@ -39,7 +52,7 @@ Also known as the syllabus, here's the rundown of what we'll cover in our weeks 
 - Make Alexa tweet for you
 - When something happens in the digital world, make something happen in the physical world
 
-All this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new prototypes that (maybe) never existed before.
+All this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.
 
 ## Valuable data is everywhere. Let's get it.
 
