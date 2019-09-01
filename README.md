@@ -1,4 +1,4 @@
-[The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.html) | [The Notes](./THE_NOTES.html)
+[The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.md) | [The Notes](./THE_NOTES.md)
 
 Welcome to Design & Development, updated for the Fall 2019 term.
 
@@ -12,7 +12,7 @@ We're going to learn how to play, experiment, learn, and tinker as we toy with n
 
 # The Fine Print
 
-The class description, logistics, rules, and grading details are in a document I call "[the fine print](./THE_FINE_PRINT.md)."
+The class description, dates, logistics, rules, and grading details are in a document I call "[the fine print](./THE_FINE_PRINT.md)."
 
 # The Notes
 
@@ -22,28 +22,21 @@ Along the way, the code and steps we'll take are outlined in [The Notes](./THE_N
 
 Also known as the syllabus, here's the rundown of what we'll cover in our weeks together:
 
-## 1. How the internet works
+## Class 1 • Basic internetting
 
-- Let's make sure we all understand how that information zips around
-- We'll build and dissect a simple website in minutes
-- In a few more, we'll build and dissect a dynamic website. 
+First we'll meet each other and review the plan for this class.
 
-## 2. Build a texting service
+Then we'll dive in, making sure we all understand how information zips around the internet and the basics of an that most basic of internet services: A web page. We'll craft a basic "static" page using Glitch, review all of its components, and then make a simple "dynamic" site.
 
-We'll learn how to set up a simple texting system, and then use our fabulous website to make it more interesting.
+## Class 2 • Roll your own information service
 
-## 3. Making a smarter service
+When your project needs relies on custom data only you have, you may need to get into some code. We'll add a database to our service to serve up data available nowhere else.
 
-We can make our service even more interesting with a simple database. 
+## Class 3 • Texting as a service
 
-## 4. APIs
+Today we'll turn our sweet service into a tool you can use via texting.
 
-## 5. Conversational interface intro
-
-
-## 6. 
-
-## Make bots to do your bidding
+## Class 4 • Make bots to do your bidding
 
 - Every time Donald Trump tweets, put it in a spreadsheet
 - Every time it's at or below 32 degrees send a tweet
@@ -52,57 +45,54 @@ We can make our service even more interesting with a simple database.
 - Make Alexa tweet for you
 - When something happens in the digital world, make something happen in the physical world
 
-All this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.
+All of this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.
 
-## Valuable data is everywhere. Let's get it.
+## Class 5 • APIs and the people who love them
 
-Weather info, crypto prices, earthquake alerts -- it's all available, and ready to be shaped into a new product nobody's made before you did. We'll learn how to find and use that data.
+Valuable data is everywhere. Let's get it.
 
-## Making quick and dirty dashboards
+Weather info, crypto prices, earthquake alerts -- it's all available, and ready to be shaped into a new product nobody's made before (maybe). We'll learn how to find and use that data.
+
+## Class 6 • Making Supercharged Spreadsheets
 
 From web site analytics to stock prices, making dashboards to track your numbers may be the most important product you build, even if just for yourself. We'll use APIs and spreadsheets to make 'em fast.
 
-## Roll your own information service
+Then we'll look at how Airtable spreadsheets can be the basis of your online database, using their unique API.
 
-When your project needs to blend existing information, or relies on custom data only you have, you may need to get into some code. We'll use Glitch to play with some examples (no coding experience necessary.)
+## Class 7 • Introduction to conversational interfaces
 
-## Alexa, what's a digital assistant?
+From chatbot platforms like Facebook Messenger to voice services such as Alexa and Google Home, there are more ways for your audience to talk directly to your creation using natural human language. We'll talk about how conversational interfaces work, and how to play and build with them using Dialogflow.
 
-Voice interfaces are popping up everywhere, and it's possible they will be key to information acquisition in the months and years to come. We'll use Glitch to build an Alexa Skill.
+## Class 8 • Talk to me: Making a voice service for Google Home
 
-## Prototyping voice conversations
- 
-Building a whole Alexa skill just to test it out on your friends or possible customers is possible -- but not always necessary. We'll learn how to prototype voice conversations quickly using an audio playboard.
+We'll weave our original service into our conversational system, making a specialized service that answers questions via text not even Google could answer. And then we'll explore the world of voice interfaces by wiring up our conversational interface to Google's voice assistant.
 
-## Storytelling with chatbots
+## Class 9 • Storytelling with chat & voice
 
-Texting or chatting with bots is one way to communicate with your audience. We'll learn the dos and don'ts of automated conversations -- and then we'll do one.
+Now that you know the basics of how to build a conversational interface, we'll talk about the best practices for designing and crafting these automated conversations, and how they can keep track of context. We'll also talk about ways to quickly prototype voice interactions on your friends or possible customers without building a whole chat agent.
 
-## Say what? Computers understanding human language
+## Class 10 • Introduction to AI for journalism
 
-Automatically processing what someone is saying -- either in a chat, to a voice assistant, or in an email -- is increasingly possible thanks to machine learning. We'll play with one of these natural language processing tools (Dialogflow) to get a handle on how to make it work for you.
+Artificial intelligence is a huge field, and the use of AI by corporations and governments is a huge issue in our society. The algorithms themselves, however, are not inherently problematic and can be used by responsible journalists to help in their investigations. We'll explore some of the services available and how you might use them for your journalism.
 
-## Sometimes a duck is a special duck
+## Class 11 • Bespoke machine learning for finding images
 
-Can you teach a computer to recognize the Mandarin duck in Central Park. Yup. Is that useful? Could be! We'll learn how, as we see how image processing and machine learning can work together on your project.
+You'll get hands-on experience using an open-source machine learning library to solve a specific problem of finding images in a huge pile of data, as you might have to do for a journalistic investigation.
 
-## Lots of innovation is happening in email. Yes, email.
+## Class 12 • Bespoke machine learning for sorting text
 
-A good email offering may be the most important product for your project. We'll look at what makes some emails great and also how to use tools to send **useful** emails programmatically. 
+You'll get more hands-on experience in machine learning, this time to sort text documents into useful categories -- helping you do in hours what might otherwise take you days.
 
-## Physical products: Leaving the laptop for the tabletop
+## Class 13 • Physical computing: From the laptop for the tabletop
 
 Tiny computers can sense the environment or respond to your commands. They can even keep track of things when you're far away. Prototyping these kinds of products is surprisingly cheap and easy. We'll do it in class.
 
-## Data security: Yours, your company's, your customers'
+## Class 14 • Data security: For you, your sources, and your audience
 
 Let's talk about security. We'll get into how you can start practicing better personal security and about how to act responsibly and ethically with the data you get from others.
 
-## Real-world production in the cloud
+## Class 15 • Review, discussion, and real-world production
 
-When it's time for your prototype to become production-worthy, you'll need scale, security, and reliability. And chances are, that means putting it in a "cloud" service like Amazon's AWS -- or the similar offerings from Google, Microsoft, and others. We'll take a tour through AWS so you can better coordinate with your engineers when it's time to go big.
+In our last class we'll talk about your projects in other classes, future projects, and what it takes to scale and secure the examples we've been talking about.
 
-## Your project progress
-
-Most weeks we will devote a part of class to talk about your ideas and progress on a prototyping project, and your preparation for your final presentation.
 
