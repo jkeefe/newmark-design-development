@@ -6,6 +6,8 @@
 
 Here's where you'll find resources, code, links, and notes for every class. Materials are updated here generally at least one day before each class.
 
+<a name="class1"></a>
+
 # Class 1 • Basic internetting
 
 ## Introductions
