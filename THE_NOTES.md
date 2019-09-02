@@ -21,7 +21,7 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
     
 ## Products in Journalism
 
-- Products in Journalism preso
+- Presentation: Overview of products in Journalism
 
 - A bit about you
     - Name
@@ -41,7 +41,7 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 
 ### Quick Examples
 
-- SMS bot: `(646) 699-3322`
+- SMS bot: Text "hi" to `(646) 699-3322`
 - Better Weather
 - Hot duck: [hotduck.today](http://hotduck.today/)
 
@@ -49,6 +49,29 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 
 - Go through the [Syllabus](./README.md).
 - The class description, logistics, rules, and grading details are in a document I call "[the fine print](./THE_FINE_PRINT.md)."
-- Grading options
 - Everyone in the Slack! [Join here](https://join.slack.com/t/cunylab/signup) and use your school email address.
+
+## Exploring web pages
+
+- Sign up for [Glitch](https://glitch.com)
+- Make a new project > `hello-webpage`
+
+## A little more advanced Internetting
+
+- Search for `jkeefe` or go to [https://glitch.com/@jkeefe](https://glitch.com/@jkeefe)
+- Find `newmark-bark`
+- Remix it!
+
+## Assignment
+
+_This is the "Class 1" assignment. Do it now ... it's due on at high noon before Class 2._
+
+Remix `newmark-bark` and make it your own. Change colors, play with formatting, play with the data. Get creative! Post the link to your project in Slack in `#design-dev` so we can all try it.
+
+
+
+
+
+
+
 
