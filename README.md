@@ -30,7 +30,7 @@ First we'll meet each other and review the plan for this class.
 
 Then we'll dive in, making sure we all understand how information zips around the internet and the basics of an that most basic of internet services: A web page. We'll craft a basic "static" page using Glitch, review all of its components, and then make a simple "dynamic" site.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class1">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class1">Notes for this class</a>.
 
 ## Class 2 • Roll your own information service
 
