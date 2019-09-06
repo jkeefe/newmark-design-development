@@ -66,7 +66,7 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 
 _This is the "Class 1" assignment. Do it now ... it's due on at high noon before Class 2._
 
-Remix `newmark-bark` and make it your own. Change colors, play with formatting, play with the data. Get creative! Post the link to your project in Slack in `#design-dev` so we can all try it.
+Start a new `hello-webpage` project in Glitch and make it your own. Change colors, play with formatting, play with the text. Get creative! Google around for html tips and tricks if you want. Post the link to your project in Slack in `#design-dev` so we can all try it.
 
 
 
