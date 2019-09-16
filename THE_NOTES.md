@@ -126,12 +126,15 @@ What we did last week:
 - To import the CSV into our database, type `.import nyc_dogs_2012.csv doginfo`
 - Note that ^ that line created a "doginfo" table within our database
 - Check out if everything worked by typing: `.schema doginfo`
-- Try `SELECT * FROM doginfo LIMIT 10;`
+
+### A little bit of SQL
+
+- Try `SELECT * FROM doginfo LIMIT 10;` (note the `;` at the end of a SQL command)
 - Try `SELECT dog_name, count(dog_name) FROM doginfo GROUP BY dog_name;`
 - Try `SELECT dog_name, count(dog_name) FROM doginfo GROUP BY dog_name COLLATE NOCASE;`
 - Try `SELECT dog_name, count(dog_name) FROM doginfo GROUP BY dog_name COLLATE NOCASE ORDER BY count(dog_name);`
 - Try `SELECT dog_name, count(dog_name) FROM doginfo GROUP BY dog_name COLLATE NOCASE ORDER BY count(dog_name) DESC LIMIT 10;`
-- Try `SELECT dog_name, count(dog_name) FROM doginfo WHERE dog_name LIKE "bella" GROUP BY dog_name COLLATE NOCASE`
+- Try `SELECT dog_name, count(dog_name) FROM doginfo WHERE dog_name LIKE "bella" GROUP BY dog_name COLLATE NOCASE;`
 
 ## Data on the web
 
