@@ -36,7 +36,7 @@ Then we'll dive in, making sure we all understand how information zips around th
 
 When your project needs relies on custom data only you have, you may need to get into some code. We'll add a database to our service to serve up data available nowhere else.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class2">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class2">Notes for this class</a>.
 
 ## Class 3 • Texting as a service
 
