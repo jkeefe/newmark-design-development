@@ -66,35 +66,60 @@ Start a new `hello-webpage` project in Glitch and make it your own. Change color
 
 # Class 2 • Roll your own information service
 
-## A little more advanced Internetting
+## Quick review of last week
 
-- Search for `jkeefe` or go to [https://glitch.com/@jkeefe](https://glitch.com/@jkeefe)
-- Find `newmark-bark-data`
-- Remix it!
-- Name it `[yourname]-bark-data`
+- Some submissions 
+- Fixes
 
-## A different struture
-
-- Instead of Glitch just serving up your fixed or *static* html page (as in Class 1) you're running a "server" file that serves up the page.
-- Let's walk through how `index.html` gets served in this case
-- Focus only on the `app.get('/',` section for now
-
-### Understanding "assets"
+### Note on "assets"
 
 - This is where we can put images and other things
 - Add an image to the assets
-- Use the full url to add it to `index.html`
+- Use the full url to add it to `index.html` using `<img src = "[URL OF IMAGE]" >` 
+- (note image tag is one of the few in html without a closing tag. so no `</img>`.
+
+## A little more advanced Internetting
+
+- Search for `jkeefe` or go to [https://glitch.com/@jkeefe](https://glitch.com/@jkeefe)
+- Find `newmark-bark` (do this again, even if you did last week -- it's a new version)
+- Remix it!
+- Name it `[yourname]-bark`
+
+## A different structure
+
+### "Static"
+
+What we did last week:
+
+1. **Request:** You -> https://curious-scout.glitch.me -> Glitch
+2. **Response:**  Glitch -> `index.html` -> you
+
+### Static, but server-driven
+
+ Instead of Glitch just serving up your fixed or *static* html page (as in Class 1) you're using a "server" file that serves up the page.
+
+1. **Request:**  You -> https://newmark-bark.glitch.me -> Glitch
+2. **Response:**  Glitch -> `server.js` -> `index.html` -> you
+
+### Dynamic
+
+1. **Request:**  You -> https://newmark-bark.glitch.me/random -> Glitch
+2. **Response:**  Glitch -> `server.js` -> get data -> inject data -> `fact-page.html` -> you
+
+### Dynamic with a database
+
+1. **Request:**  You -> https://newmark-bark.glitch.me/bella -> Glitch
+2. **Response:**  Glitch -> `server.js` -> query a database -> get the answer -> turn into JSON -> you
+
 
 ## Let's get some dog data
 
 - Let's look at a [CSV of 81,000 NYC dogs](https://docs.google.com/spreadsheets/d/1dvL1vq4YTG4Y72XHlWvwTg27f1k3UVnXDZfJm5MHef8/edit?usp=sharing)
-- 
-
 
 ## Databases!
 
 - Go to the Glitch console
-- Change directory into the `.data` directory with `cd .data`
+- Change directory into the `.data` directory by typing `cd .data`
 - To get the CSV, type this `wget -P "http://media.johnkeefe.net/class-modules/nyc_dogs_2012.csv"`
 - To start the database, type `sqlite3 dogs.db`
 - To switch into CSV mode type `.mode csv`
@@ -106,7 +131,7 @@ Start a new `hello-webpage` project in Glitch and make it your own. Change color
 - Try `SELECT dog_name, count(dog_name) FROM doginfo GROUP BY dog_name COLLATE NOCASE;`
 - Try `SELECT dog_name, count(dog_name) FROM doginfo GROUP BY dog_name COLLATE NOCASE ORDER BY count(dog_name);`
 - Try `SELECT dog_name, count(dog_name) FROM doginfo GROUP BY dog_name COLLATE NOCASE ORDER BY count(dog_name) DESC LIMIT 10;`
-- Try `SELECT dog_name, count(dog_name) FROM doginfo WHERE dog_name LIKE "max" GROUP BY dog_name COLLATE NOCASE`
+- Try `SELECT dog_name, count(dog_name) FROM doginfo WHERE dog_name LIKE "bella" GROUP BY dog_name COLLATE NOCASE`
 
 ## Data on the web
 
