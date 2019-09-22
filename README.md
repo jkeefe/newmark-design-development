@@ -42,7 +42,7 @@ When your project needs relies on custom data only you have, you may need to get
 
 Today we'll turn our sweet service into a tool you can use via texting.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class3">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class3">Notes for this class</a>.
 
 ## Class 4 • Introduction to conversational interfaces
 
