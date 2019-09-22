@@ -168,8 +168,9 @@ Add a new "route" to your web service that, when hit by a web browser, displays 
 Twilio is a service that accepts text messages (also phone calls!) and sends them on to a web service -- like Newmark Bark!
 
 Here's the path: 
-    - **Request** Your phone > the service phone number > Twilio > Our Glitch site
-    - **Response** Our Glitch site > Twilio > your phone number > your phone 
+
+    - **Request:** Your phone > the service phone number > Twilio > Our Glitch site
+    - **Response:** Our Glitch site > Twilio > your phone number > your phone 
         
 If you send "hello" the service phone number, here's what Twilio sends to our Glitch site:
 
