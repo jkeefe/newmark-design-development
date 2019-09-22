@@ -44,7 +44,25 @@ Today we'll turn our sweet service into a tool you can use via texting.
 
 <!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class3">Notes for this class</a>. -->
 
-## Class 4 • Make bots to do your bidding
+## Class 4 • Introduction to conversational interfaces
+
+From chatbot platforms like Facebook Messenger to voice services such as Alexa and Google Home, there are more ways for your audience to talk directly to your creation using natural human language. We'll talk about how conversational interfaces work, and how to play and build with them using Dialogflow.
+
+<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class4">Notes for this class</a>. -->
+
+## Class 5 • Talk to me: Making a voice service for Google Home
+
+We'll weave our original service into our conversational system, making a specialized service that answers questions via text not even Google could answer. And then we'll explore the world of voice interfaces by wiring up our conversational interface to Google's voice assistant.
+
+<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class5">Notes for this class</a>. -->
+
+## Class 6 • Storytelling with chat & voice
+
+Now that you know the basics of how to build a conversational interface, we'll talk about the best practices for designing and crafting these automated conversations, and how they can keep track of context. We'll also talk about ways to quickly prototype voice interactions on your friends or possible customers without building a whole chat agent.
+
+<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class6">Notes for this class</a>. -->
+
+## Class 7 • Make bots to do your bidding
 
 - Every time Donald Trump tweets, put it in a spreadsheet
 - Every time it's at or below 32 degrees send a tweet
@@ -55,39 +73,21 @@ Today we'll turn our sweet service into a tool you can use via texting.
 
 All of this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class4">Notes for this class</a>. -->
+<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class7">Notes for this class</a>. -->
 
-## Class 5 • APIs and the people who love them
+## Class 8 • APIs and the people who love them
 
 Valuable data is everywhere. Let's get it.
 
 Weather info, crypto prices, earthquake alerts -- it's all available, and ready to be shaped into a new product nobody's made before (maybe). We'll learn how to find and use that data.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class5">Notes for this class</a>. -->
+<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class8">Notes for this class</a>. -->
 
-## Class 6 • Making Supercharged Spreadsheets
+## Class 9 • Making Supercharged Spreadsheets
 
 From web site analytics to stock prices, making dashboards to track your numbers may be the most important product you build, even if just for yourself. We'll use APIs and spreadsheets to make 'em fast.
 
 Then we'll look at how Airtable spreadsheets can be the basis of your online database, using their unique API.
-
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class6">Notes for this class</a>. -->
-
-## Class 7 • Introduction to conversational interfaces
-
-From chatbot platforms like Facebook Messenger to voice services such as Alexa and Google Home, there are more ways for your audience to talk directly to your creation using natural human language. We'll talk about how conversational interfaces work, and how to play and build with them using Dialogflow.
-
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class7">Notes for this class</a>. -->
-
-## Class 8 • Talk to me: Making a voice service for Google Home
-
-We'll weave our original service into our conversational system, making a specialized service that answers questions via text not even Google could answer. And then we'll explore the world of voice interfaces by wiring up our conversational interface to Google's voice assistant.
-
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class8">Notes for this class</a>. -->
-
-## Class 9 • Storytelling with chat & voice
-
-Now that you know the basics of how to build a conversational interface, we'll talk about the best practices for designing and crafting these automated conversations, and how they can keep track of context. We'll also talk about ways to quickly prototype voice interactions on your friends or possible customers without building a whole chat agent.
 
 <!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class9">Notes for this class</a>. -->
 
