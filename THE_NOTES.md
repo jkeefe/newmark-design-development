@@ -323,5 +323,148 @@ _This is the "Class 2" assignment. Do it now ... it's due on at high noon before
 Add a the new "route" to your web service that so that when I text your phone number I get the right number of dogs. Make sure it works and post a screenshot of your interaction with your bot into Slack.
 
 
+# Class 4 • Introduction to conversational interfaces
 
+## Say what? Computers understanding human language
+
+Automatically processing what someone is saying -- either in a chat, to a voice assistant, or in an email -- is increasingly possible thanks to machine learning. We'll play with one of these natural language processing tools (Dialogflow) to get a handle on how to make it work for you.
+
+### Utterances
+
+Also called "Training Phrases" (Dialogflow).
+
+Those are all the things a human might say that mean the same intent. So: 
+
+- Wow
+- OMG
+- whoa!
+- I can't believe it!
+- Amazing
+
+... could all _utterances_ for an intent we might call the `chitchat-wow` intent. The more utterances, the better the NLP learns.
+
+### Intents
+
+Having your bot (or any conversational software) understand "yes" is pretty clear. But what if people say yes differently?
+
+- Yes!
+- Yup.
+- You bet!
+- Si.
+- Of course
+
+You can teach it that _phrases like this_ mean "yes." So we could call this intent `chitchat-yes`.
+
+- No way
+- Nope
+- nada
+- no
+- Heck no
+
+If we see words like the above, we could say these are `chitchat-no`.
+
+- Wow
+- OMG
+- whoa!
+- I can't believe it!
+- Amazing
+
+And words like these could mean the `chitchat-wow` intent.
+
+So you could make bot responses to those _intents_ instead of those words, and let the Natural Language Processor decide which intent is, um, intended.
+
+### Training
+
+Interestingly, most natural language systems allow you to review its decisions and _train_ it when it performed well and performed poorly.
+
+## More intents
+
+Consider the intents for the following phrases:
+
+- What's the forecast in Minneapolis tomorrow?
+- Will it rain in New York Friday?
+- What's the temperature outside?
+- Do I need an umbrella?
+
+## Entities
+
+To answer a "forecast" intent, you need two additional pieces of information: Where and when. 
+
+These are called "entities" (and also slits and elements and probably many other things).
+
+So a `weather-forcast` intent requires `place` and `time`.
+
+- What's the forecast in Minneapolis tomorrow?
+    Intent: `weather-forecast`
+    Entity Place: `minneapolis`
+    Entity Time: `tomorrow`
+    
+- Will it rain in New York Friday?
+    Intent: `weather-precipitation`
+    Entity Place: `new york`
+    Entity Time: `friday`
+
+- What's the temperature outside?
+    Intent: ?
+    Entity Place: ?
+    Entity Time: ?
+
+- Do I need an umbrella?
+    Intent: ?
+    Entity Place: ?
+    Entity Time: ?
+
+- Dialogflow in console
+- Using as an API
+- Dexter
+
+### Slots
+
+Slots are a category of Entity. So `city` is a slot, and `minneapolis` is the entity.
+
+### Actions
+
+In Dialogflow, you can name an "action" in addition to an intent. The action is the name of something that should be done. It can be passed along to your code.
+
+## Introduction to Dialogflow
+
+There are lots of tools out there to use. We'll play with [Dialogflow](https://dialogflow.com) (which used to be called API.ai ... so there may be some notations here that still reference that).
+
+## Setup
+
+As usual, you'll need to sign up. It's free. And you'll need a Google/Gmail account.
+
+- Click "Sign up for Free"
+- Log in with Google (Dialogflow is a Google product).
+- Choose "Create Agent" -- and you may need to authenticate with Google again here.
+- Note that you can think of "Agents" as one bot brain. What you teach one agent isn't (easily) shared with another agent.
+- Name it "MyAgent" (no spaces allowed)
+- Leave the "Link to Google Project" line empty and hit OK
+- Check the `V1 API` button (note that Version 1 won't work after October 2019)
+- Click "Save"
+
+OK, your "agent" is established.
+
+- If you don't see a sidebar on the left side, click the menu icon (the three horizontal lines)
+- In the sidebar, click on "Small Talk."
+- You'll get a new screen. Look for the "Enable" switch and turn it on
+- Click "Save"
+
+You have now turned on a bunch of default responses for common things humans say to bots.
+
+You can alter the default responses on this page, tho it would take you a while to go through them all.
+
+Try typing some things in the "Try it now" space in the upper right corner.
+
+Note that these defaults do **not** result in an _intent_. That's because we haven't made them yet. They **do** however, result in an _action_ ... which we can use in our code.
+
+## Play a little
+
+Find the "Try it now" box at the top and try typing some random phrases that might constitute small talk. What happens?
+
+Pay close attention to the "Intent" and "Action" areas.
+
+Also try things that might be casual synonyms for "yes" and "no."
+
+Be sure to ch
 
