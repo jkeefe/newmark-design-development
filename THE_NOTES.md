@@ -318,7 +318,7 @@ We'll be using [Twilio](http://twilio.com) to make the connection between the te
         
 - Try sending "spot" to your phone number!
 
-_This is the "Class 2" assignment. Do it now ... it's due on at high noon before Class 4 (Which is THURSDAY)._
+_This is the "Class 3" assignment. Do it now ... it's due on at high noon before Class 4 (Which is THURSDAY)._
 
 Add a the new "route" to your web service that so that when I text your phone number I get the right number of dogs. Make sure it works and post a screenshot of your interaction with your bot into Slack.
 
@@ -390,7 +390,7 @@ Consider the intents for the following phrases:
 
 To answer a "forecast" intent, you need two additional pieces of information: Where and when. 
 
-These are called "entities" (and also slits and elements and probably many other things).
+These are called "entities" (and also slots and elements and probably many other things).
 
 So a `weather-forcast` intent requires `place` and `time`.
 
@@ -414,14 +414,6 @@ So a `weather-forcast` intent requires `place` and `time`.
     Entity Place: ?
     Entity Time: ?
 
-- Dialogflow in console
-- Using as an API
-- Dexter
-
-### Slots
-
-Slots are a category of Entity. So `city` is a slot, and `minneapolis` is the entity.
-
 ### Actions
 
 In Dialogflow, you can name an "action" in addition to an intent. The action is the name of something that should be done. It can be passed along to your code.
@@ -440,7 +432,7 @@ As usual, you'll need to sign up. It's free. And you'll need a Google/Gmail acco
 - Note that you can think of "Agents" as one bot brain. What you teach one agent isn't (easily) shared with another agent.
 - Name it "MyAgent" (no spaces allowed)
 - Leave the "Link to Google Project" line empty and hit OK
-- Check the `V1 API` button (note that Version 1 won't work after October 2019)
+- Check the `V2 API` button.
 - Click "Save"
 
 OK, your "agent" is established.
@@ -456,7 +448,7 @@ You can alter the default responses on this page, tho it would take you a while 
 
 Try typing some things in the "Try it now" space in the upper right corner.
 
-Note that these defaults do **not** result in an _intent_. That's because we haven't made them yet. They **do** however, result in an _action_ ... which we can use in our code.
+Note that these defaults do **not** result in an _intent_. That's because we haven't made them yet. They **do** however, result in an _action_ which we can use.
 
 ## Play a little
 
@@ -466,5 +458,26 @@ Pay close attention to the "Intent" and "Action" areas.
 
 Also try things that might be casual synonyms for "yes" and "no."
 
-Be sure to ch
+## Assignment
+
+_This is the "Class 4" assignment. Do it now ... it's due on at high noon before Class 5 (Which is a week from Monday)._
+
+"Hi, I'm Newmark Bark! Ask me anything about dogs and dog ownership in New York City!"
+
+- Write three asks -- questions or requests, in regular English, that someone might ask in response to this prompt.
+- Make then questions nobody else has posted in Slack already!
+- For each question ...  
+  - describe the "intent" of the question.
+  - identity any "entities" in the question. 
+  - identify any "missing entities" you'd need to know to answer the ask. 
+
+Here's an example:
+
+- Ask: How much is a plane ticket from New York to Miami?
+- Intent: plane-ticket-price
+- Entities: departure city, destination city
+- Missing entities: departure date, destination date
+
+
+
 
