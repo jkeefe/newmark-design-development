@@ -582,6 +582,10 @@ Now we have to go back and get this intent set up for being "fulfilled" this way
 
 You can also get here from Dialogflow by clicking "See how it works in Google Assistant"
 
+## Deployment (aka: Making it available to others)
+
+You can make Google Assistant apps available to others, either a select group of testers or to the public at large. Here is a good post outlining [the steps for doing that](https://medium.com/heptagon/chapter-12-how-to-build-a-google-home-app-with-dialogflow-app-deployment-9596bd74d9ad).
+
 ## Assignment
 
 _This is the "Class 5" assignment. Do it now ... it's due on at high noon before Class 5 (Which is a week from WEDNESDAY)._
