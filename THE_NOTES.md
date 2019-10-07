@@ -584,7 +584,7 @@ You can also get here from Dialogflow by clicking "See how it works in Google As
 
 ## Assignment
 
-_This is the "Class 5" assignment. Do it now ... it's due on at high noon before Class 5 (Which is a week from Monday)._
+_This is the "Class 5" assignment. Do it now ... it's due on at high noon before Class 5 (Which is a week from WEDNESDAY)._
 
 Show me that you can make this work with your voice! We'll do this in class. Make sure I watch you do it individually.
 
