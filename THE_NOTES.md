@@ -322,6 +322,7 @@ _This is the "Class 3" assignment. Do it now ... it's due on at high noon before
 
 Add a the new "route" to your web service that so that when I text your phone number I get the right number of dogs. Make sure it works and post a screenshot of your interaction with your bot into Slack.
 
+<a name="class4"></a>
 
 # Class 4 • Introduction to conversational interfaces
 
@@ -478,6 +479,29 @@ Here's an example:
 - Entities: departure city, destination city
 - Missing entities: departure date, destination date
 
+<a name="class5"></a>
 
+# Class 5 • Talk to me: Making a voice service for Google Home
+
+## Giving Dialogflow more smarts
+
+
+
+
+## Updating our Glitch project to fulfill the requests
+
+## Wiring it up to Google Assistant (and Google Home)
+
+### Quick updates we'll need for Dialogflow
+
+- Add information to the Welcome intent
+    - Because we need a welcome!
+- Add an "action" to our dog name intent. Call it `get-dog-name`
+
+### Need to tie that to one of the "Actions by Google"
+
+- Go to `console.actions.google.com`
+
+<img src = "./images/Screen Shot 2019-10-07 at 12.52.19 PM.png" alt="Pick Project" width=500> 
 
 

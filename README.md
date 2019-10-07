@@ -48,13 +48,13 @@ Today we'll turn our sweet service into a tool you can use via texting.
 
 From chatbot platforms like Facebook Messenger to voice services such as Alexa and Google Home, there are more ways for your audience to talk directly to your creation using natural human language. We'll talk about how conversational interfaces work, and how to play and build with them using Dialogflow.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class4">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class4">Notes for this class</a>.
 
 ## Class 5 • Talk to me: Making a voice service for Google Home
 
 We'll weave our original service into our conversational system, making a specialized service that answers questions via text not even Google could answer. And then we'll explore the world of voice interfaces by wiring up our conversational interface to Google's voice assistant.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class5">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class5">Notes for this class</a>.
 
 ## Class 6 • Storytelling with chat & voice
 
