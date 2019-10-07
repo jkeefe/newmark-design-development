@@ -485,10 +485,68 @@ Here's an example:
 
 ## Giving Dialogflow more smarts
 
+Remember, last class we taught Dialogflow to (mostly!) identify the dog name in the natural language phrase, "How many dogs are named spot?". But it didn't *answer* the question. 
 
-
+To answer the question, we need to ask our special service -- which lives in Glitch! Let's set up Glitch to answer the question.
 
 ## Updating our Glitch project to fulfill the requests
+
+Dialogflow is going to send us a "fulfillment request." If you'd like to see the whole "payload" it will send, [look at the documentation here](https://cloud.google.com/dialogflow/docs/fulfillment-how#webhook_request
+).
+
+The key piece we're going to want is the "dogname" value, right? We need to know the name of the dog to look up. That's represented by this value in the payload: `queryResult.parameters.dogname`
+
+So this is the code we'll add to our Glitch app -- remember to paste this on a blank line above the "// listen for requests :)" line!
+
+```
+app.post('/voice/name', function(request, response){
+  
+  var search_dog = request.body.queryResult.parameters.dogname 
+  
+  db.all('SELECT dog_name, count(dog_name) AS total FROM doginfo WHERE dog_name LIKE "' + search_dog + '" GROUP BY dog_name COLLATE NOCASE', function(err, rows) {
+    
+    if (err) {
+      console.log(err)
+    }
+    
+    var total_dogs
+    
+    if (rows.length < 1) {
+      total_dogs = "no"
+    }  else {
+      total_dogs = rows[0].total
+    }
+    
+    var response_phrase = `There are ${total_dogs} dogs named ${search_dog} in New York City.`
+
+    var data ={
+      "fulfillmentText": response_phrase
+      }
+
+    response.send(JSON.stringify(data))
+    
+  })
+  
+})
+```
+
+Let's look through this. It should be mostly familiar!
+
+## Add fulfillment to our intent
+
+- Back in Dialogflow ... 
+- In the side menu, click on "Fulfillment"
+- Across from "Webhook" click the "enable" switch
+- In the "URL" field, put this url, substituting your Glitch project name:
+    - `https://[yourproject].glitch.me/voice/name/`
+- Click "Save"
+
+Now we have to go back and get this intent set up for being "fulfilled" this way:
+
+- In the side menu, click "Intents"
+- Click on the `dog-name-count` intent
+- Scroll all the way down "Fulfillment"
+- `Enable webhook call for this intent`
 
 ## Wiring it up to Google Assistant (and Google Home)
 
@@ -500,8 +558,35 @@ Here's an example:
 
 ### Need to tie that to one of the "Actions by Google"
 
-- Go to `console.actions.google.com`
+- Go to <a href="https://console.actions.google.com">`console.actions.google.com`</a>
+- Pick `New Project`
+- Agree and continue (if you agree!)
+- Look for your "agent" name (probably `dog-name-count`) in the list of projects, and pick that
+- On the "Welcome to your new project" page, scroll down and pick `conversational`
+- Enter a "Display Name" -- this is a public-facing name your users would ask for. So if you put "Doctor Dog" here, users would say, "OK, Google. Talk to Doctor Dog."
+- Pick a Google Assistant voice if you'd like to change it
 
-<img src = "./images/Screen Shot 2019-10-07 at 12.52.19 PM.png" alt="Pick Project" width=500> 
+### Head back to Dialogflow
 
+- Click on `Integrations`
+- Click on `Integration Settings`
+- Add an "Implicit invocation" -- the dog name intent you made
+- Click the switch for "Auto-preview changes"
+- Click "Test"
+
+### Testing in Actions by Google
+
+- Try the text chat!
+- Click on the microphone and enable permission to use your microphone
+- Try it!
+
+You can also get here from Dialogflow by clicking "See how it works in Google Assistant"
+
+## Assignment
+
+_This is the "Class 5" assignment. Do it now ... it's due on at high noon before Class 5 (Which is a week from Monday)._
+
+Show me that you can make this work with your voice! We'll do this in class. Make sure I watch you do it individually.
+
+If you can't do this in class, or were not in class, use [QuickTime to make a screen recording](https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac) of you using it and DM that recording to me in Slack.
 
