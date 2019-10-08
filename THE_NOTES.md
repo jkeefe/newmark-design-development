@@ -120,7 +120,7 @@ What we did last week:
 
 - Go to the Glitch console
 - Change directory into the `.data` directory by typing `cd .data`
-- To get the CSV, type this `wget -P "http://media.johnkeefe.net/class-modules/nyc_dogs_2012.csv"`
+- To get the CSV, type this `wget "http://media.johnkeefe.net/class-modules/nyc_dogs_2012.csv"`
 - To start the database, type `sqlite3 dogs.db`
 - To switch into CSV mode type `.mode csv`
 - To import the CSV into our database, type `.import nyc_dogs_2012.csv doginfo`
@@ -496,7 +496,7 @@ Dialogflow is going to send us a "fulfillment request." If you'd like to see the
 
 The key piece we're going to want is the "dogname" value, right? We need to know the name of the dog to look up. That's represented by this value in the payload: `queryResult.parameters.dogname`
 
-So this is the code we'll add to our Glitch app -- remember to paste this on a blank line above the "// listen for requests :)" line!
+So this is the code we'll add to the `server.js` file in our Glitch app. Remember to paste this on a blank line above the "// listen for requests :)" line!
 
 ```
 app.post('/voice/name', function(request, response){
@@ -530,7 +530,22 @@ app.post('/voice/name', function(request, response){
 })
 ```
 
-Let's look through this. It should be mostly familiar!
+We'll walk through this in class. It should be mostly familiar!
+
+Important fix: We also need to change line No. 9 in the Glitch script.
+
+Delete: 
+
+```
+app.use(bodyParser.urlencoded({ extended: true }));
+```
+
+And replace it with:
+
+```
+app.use(bodyParser.json())
+```
+
 
 ## Add fulfillment to our intent
 
@@ -590,7 +605,7 @@ You can make Google Assistant apps available to others, either a select group of
 
 _This is the "Class 5" assignment. Do it now ... it's due on at high noon before Class 5 (Which is a week from WEDNESDAY)._
 
-Show me that you can make this work with your voice! We'll do this in class. Make sure I watch you do it individually.
+Show me that you've successfully connected Dialogflow to your Glitch service, and that you get a correct answer when you ask "How many dogs are named spot." We'll do this in class. Make sure I watch you do it individually.
 
 If you can't do this in class, or were not in class, use [QuickTime to make a screen recording](https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac) of you using it and DM that recording to me in Slack.
 
