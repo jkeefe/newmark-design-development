@@ -60,7 +60,7 @@ We'll weave our original service into our conversational system, making a specia
 
 Now that you know the basics of how to build a conversational interface, we'll talk about the best practices for designing and crafting these automated conversations, and how they can keep track of context. We'll also talk about ways to quickly prototype voice interactions on your friends or possible customers without building a whole chat agent.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class6">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class6">Notes for this class</a>.
 
 ## Class 7 • Make bots to do your bidding
 

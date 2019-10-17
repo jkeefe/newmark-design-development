@@ -609,3 +609,24 @@ Show me that you've successfully connected Dialogflow to your Glitch service, an
 
 If you can't do this in class, or were not in class, use [QuickTime to make a screen recording](https://support.apple.com/guide/quicktime-player/record-your-screen-qtp97b08e666/mac) of you using it and DM that recording to me in Slack.
 
+<a name="class6"></a>
+
+# Class 6 • Storytelling with chat & voice
+
+## Tips for crafting story flow 
+
+[Watch this video](https://vimeo.com/287093921) ... which is essentially the class presentation.
+
+## Build a bot using Dexter
+
+We'll step through the [slides for today's class](http://media.johnkeefe.net/chatbot-workshop/assets/player/KeynoteDHTMLPlayer.html#24).
+
+## Assignment
+
+_This is the "Class 6" assignment. Do it now ... it's due on at high noon before Class 7._
+
+Go through the [Build-a-Bot workshop using Dexter](http://media.johnkeefe.net/chatbot-workshop/assets/player/KeynoteDHTMLPlayer.html#24) and publishing all of your topics to the web. Then **paste the `pste.eu` url for your bot into Slack.**
+
+That's it! If you get errors, hit me up in Slack. Give yourself time to work on it and debug it. 
+
+
