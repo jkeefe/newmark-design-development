@@ -629,4 +629,86 @@ Go through the [Build-a-Bot workshop using Dexter](http://media.johnkeefe.net/ch
 
 That's it! If you get errors, hit me up in Slack. Give yourself time to work on it and debug it. 
 
+<a name="class7"></a>
+
+# Class 7 • Make bots to do your bidding
+
+We'll particularly focus on automated bot tools for journalists.
+
+## Anatomy of a bot
+
+- Trigger
+- Response
+
+## Google Alerts
+
+Make a [Google alert](https://www.google.com/alerts) for stories and people, especially when you're working on them.
+
+What's the trigger? What's the response?
+
+## Klaxon
+
+- Setup: https://github.com/themarshallproject/klaxon
+- John's: https://qz-klaxon.herokuapp.com/
+
+## IFTTT
+
+- weather
+- alexa -> tweet
+- hashtag to Slack
+- RSS court cases
+    - Pacer: https://www.pacer.gov/psco/cgi-bin/links.pl
+- trump tweets
+- any hashtag you're interested in
+- something on a cron
+- web hooks
+- sms text
+
+## Zapier
+
+- https://zapier.com/
+
+## Introduction to APIs
+
+- Newmark Bark
+    - https://newmark-bark.glitch.me/name/spot
+
+- Coinbase
+    - Deets.
+    - API call: https://api.coinbase.com/v2/prices/spot?currency=USD
+    - Downloads a file
+
+        ```json
+        
+        
+        {
+            "day": "Wednesday, January 30, 2019",
+            "currently": { "description":"SNOW" },
+            "forecast": {
+                    "condition": "COLD",
+                    "temperature": 5,
+                    "exclamations": ["Wow!","Brrr!","Careful!"]
+                }
+        }
+        
+        
+        ```
+
+- Dark Sky API
+    - http://darksky.net/dev
+    - sign up for an account
+    - see your key
+    - try your key: [`https://api.darksky.net/forecast/YOUR_KEY_HERE/40.755,-73.991`](https://api.darksky.net/forecast/YOUR_KEY_HERE/40.755,-73.991)
+    - toy with the lat/lon
+    - Propublica's congressional api
+        - https://www.propublica.org/datastore/api/propublica-congress-api
+    
+
+## Putting it into Dexter!
+
+```
++ whats a bitcoin worth
+$ GET https://api.coinbase.com/v2/prices/spot?currency=USD
+- The current price of one bitcoin is ${{data.amount}} dollars.
+```
 

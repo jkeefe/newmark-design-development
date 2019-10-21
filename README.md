@@ -73,7 +73,7 @@ Now that you know the basics of how to build a conversational interface, we'll t
 
 All of this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class7">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class7">Notes for this class</a>.
 
 ## Class 8 • APIs and the people who love them
 
