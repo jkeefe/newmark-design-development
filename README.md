@@ -81,7 +81,7 @@ Valuable data is everywhere. Let's get it.
 
 Weather info, crypto prices, earthquake alerts -- it's all available, and ready to be shaped into a new product nobody's made before (maybe). We'll learn how to find and use that data.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class8">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class8">Notes for this class</a>.
 
 ## Class 9 • Making Supercharged Spreadsheets
 
@@ -89,7 +89,7 @@ From web site analytics to stock prices, making dashboards to track your numbers
 
 Then we'll look at how Airtable spreadsheets can be the basis of your online database, using their unique API.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class9">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class9">Notes for this class</a>.
 
 ## Class 10 • Introduction to AI for journalism
 

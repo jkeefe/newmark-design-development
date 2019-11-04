@@ -1,4 +1,4 @@
-[The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.html) | [The Notes](./THE_NOTES.html)
+ [The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.html) | [The Notes](./THE_NOTES.html)
 
 # The Notes
 
@@ -711,4 +711,238 @@ What's the trigger? What's the response?
 $ GET https://api.coinbase.com/v2/prices/spot?currency=USD
 - The current price of one bitcoin is ${{data.amount}} dollars.
 ```
+
+# Class 8 • APIs and the people who love them
+
+## Making a "Meiers" quake Tweeter
+
+### Challenge
+
+- Here's the [origin video](https://www.youtube.com/watch?v=PaAKnWtCQZs)
+- Here's the [site I made converting magnitude-moment scale to Meiers](https://meier-quake.glitch.me/)
+
+Task: **I want to make a twitter bot that sends out a tweet whenever there's an earthquake, but says the strength in meiers**
+
+
+
+### Helpful code snippets
+
+IFTTT formula payload
+```
+{"title": "{{EntryTitle}}", "content": "{{EntryContent}}", "url": "{{EntryUrl}}" }
+```
+
+Typical title:
+```
+M 1.7 - 22km NNW of North Nenana, Alaska
+```
+
+Regex
+```
+/^M (.*) - (.*)$/
+or
+/^M (.*?) - (.*)$/
+```
+
+### Regular expressions!
+
+Amazing, arcane "searching on steroids."
+
+- [Rubular](https://rubular.com/)
+- [The bastard's book of regular expressions](http://regex.bastardsbook.com/files/bastards-regexes.pdf)
+
+### Tweeting from Glitch
+
+- Searched Glitch and found [this example Glitch project](https://glitch.com/edit/#!/twitterbot?path=README.md:1:0).
+- Here's info on [setting things up on the Twitter side](https://botwiki.org/resource/tutorial/how-to-create-a-twitter-app/).
+
+## Assignment: Imagine a twitter bot you want to make. Then how would you make it. 
+
+Imagine a twitter bot you want to make. Then how would you make it. Answer these questions in the #design-dev Slack channel: 
+
+- What is the trigger?
+- What does the response look like? (Show me a sample)
+
+- where's the data come from?
+- what does the data look like?
+- what do you need to do with the data
+- what is the flow
+
+_This is the "Class 8" assignment. Do it now ... it's due at high noon before Class 9._
+
+# Class 9 • Making Supercharged Spreadsheets
+
+## Google Spreadsheet Dashboards
+
+- Going to use coinbase.com
+- NYC info is: http://api.coinbase.com
+- Great dashboard info here: https://www.benlcollins.com/apps-script/beginner-apis/
+- Which is also here: https://github.com/benlcollins/apps_script_apis/blob/master/for_website/001_numbers.gs
+- We'll add in `JSON.parse(data)` to those examples
+
+Steps:
+
+- Open a new Google spreadsheet
+- Name it
+- Go to tools -> Script Editor
+- Name it
+- Copy and paste this block of code into the main window:
+
+
+```
+function onOpen() {
+
+    // this code runs when the spreadsheet is opened
+    var ui = SpreadsheetApp.getUi();
+    ui.createMenu('API')
+      .addItem('Update Bitcoin','callCoinbase')
+      .addToUi();
+      
+}
+
+function callCoinbase() {
+
+    // Call coinbase for the latest data
+    var response = UrlFetchApp.fetch("https://api.coinbase.com/v2/prices/spot?currency=USD");
+
+    var coinbase = JSON.parse(response.getContentText());
+    var sheet = SpreadsheetApp.getActiveSheet();
+  sheet.getRange(1,1).setValue([coinbase.data.amount]);
+  
+}
+```
+
+- Let's review the code
+- Reload the page (to trigger the "onOpen" function)
+- First time it runs, will ask you for permission to use the script. 
+- Try the button!
+
+More code snippets:
+
+Add the currency value ...
+
+```
+sheet.getRange(1,2).setValue([coinbase.data.currency]);
+```
+
+Make it append to the end of the list ... (calculate the "row" as the last row plus 1) ...
+
+```
+sheet.getRange(sheet.getLastRow() + 1,1).setValue([coinbase.data.amount]);
+```
+
+### Extra info
+
+- Many more great examples here: https://www.benlcollins.com/spreadsheets/starting-gas/
+
+## Airtable "Base" and their API
+
+
+### Start a spreadsheet
+
+- Head over to [airtable.com](https://airtable.com).
+- Start a new "base"
+- Then make a few entries
+- Delete any blank entries
+
+### Check out its custom API
+
+- Then head over to the api section at [api.airtable.com](https://airtable.com/api)
+- Pick the same "base."
+- Click "show api key" at the top right
+- Then copy the url (not the `curl` part) from under "Example Using Query Parameter"
+- Open a new tab in your browser and paste that in
+
+### Use it for Glitch
+
+- Open new tab for your Glitch project
+- Put `AIRTABLE_API_KEY="YOUR_API_KEY"` in to your `.env` file for your "bark" project
+- Replace `YOUR_API_KEY` with your actual API key from the Airtable tab, enclosed in quotes.
+- In the Glitch app, we need to add the "airtable.js" library to this project, which you do by altering the `package.json` file and it's "dependencies" section to look like this (adding a comma and the "airtable" line):
+
+```json
+"dependencies": {
+    "express": "^4.16.3",
+    "mustache-express":"^1.2.8",
+    "sqlite3": "^4.0.0",
+    "airtable": "^0.7.2"
+  },
+ ```
+
+- Back on the Airtable tab, click "JavaScript" at the top
+- Then we add this code to the top of the project, copied from the airtable api code. Note I've changed it from `YOUR_API_KEY` to `AIRTABLE_API_KEY`. (Your code will be slightly different, because your "base" has a different ID.)
+
+```javascript
+var Airtable = require('airtable');
+var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base('appSNJkE8AsR2E1EX');
+```
+
+- Let's add this as a new "view" called `news.html`
+- I duplicated `fact-page.html` and called it `news.html`. Here's the code:
+
+```html
+<html lang="en">
+  
+  <head>
+    <title>Newmark Bark</title>
+    <meta name="description" content="latest news">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">  
+  </head>
+  
+  <body>
+    <h1>
+      Newmark Bark • Latest News
+    </h1>
+    <h2>
+      {{fields.Name}}
+    </h2>
+    
+    <p>
+      {{fields.Notes}}
+    </p>
+  </body>
+  
+</html>
+```
+
+- Then I added this code to the `server.js` file, just above the line that says `// listen for requests`:
+
+```JavaScript
+app.get('/news', function(req, resp) {
+  
+  base('Headlines').select({
+    view: 'Grid view'
+    }).firstPage(function(err, records) {
+    
+      if (err) { 
+        console.error(err)
+        return
+      }
+
+      var last_record_number = records.length - 1
+
+      var data = records[last_record_number]
+
+      // Whenever you change your templates (those files in views/) you need to
+      // change this number to clear the data cache and reload the templates
+      data.cachebust = 10
+
+      // pass the data to the html template and serve up the page
+      resp.render('news.html', data)
+
+  })
+  
+})
+```
+
+
+
+- 
+
 
