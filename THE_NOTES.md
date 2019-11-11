@@ -941,6 +941,9 @@ app.get('/news', function(req, resp) {
 })
 ```
 
+## Assignment
+
+Make the Coinbase-fed Google spreadsheet as described above, and post a screenshot of it working in Slack. 
 
 
 - 
