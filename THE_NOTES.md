@@ -712,6 +712,8 @@ $ GET https://api.coinbase.com/v2/prices/spot?currency=USD
 - The current price of one bitcoin is ${{data.amount}} dollars.
 ```
 
+<a name="class8"></a>
+
 # Class 8 • APIs and the people who love them
 
 ## Making a "Meiers" quake Tweeter
@@ -769,6 +771,8 @@ Imagine a twitter bot you want to make. Then how would you make it. Answer these
 - what is the flow
 
 _This is the "Class 8" assignment. Do it now ... it's due at high noon before Class 9._
+
+<a name="class9"></a>
 
 # Class 9 • Making Supercharged Spreadsheets
 
@@ -943,9 +947,56 @@ app.get('/news', function(req, resp) {
 
 ## Assignment
 
+_This is the Class 9 assignment._
+
 Make the Coinbase-fed Google spreadsheet as described above, and post a screenshot of it working in Slack. 
 
+<a name="class10"></a>
 
-- 
+# Class 10 • Intro to AI for journalism
 
+Here's [a PDF with today's slides](https://www.dropbox.com/s/stqo1ngtbmdufwf/Class10-AI-Intro-Images.pdf?dl=0).
 
+Other key links:
+- [Google Vision API](https://cloud.google.com/vision/), including a live demo
+- [Google Colab Notebooks](https://colab.research.google.com)
+- Steps for [using the Quartz AI Studio notebooks](https://github.com/quartz/aistudio-workshops)
+- The video describing [how to get a Google Vision API key](https://drive.google.com/file/d/18eh27UlIYHAdYNGupWChyBabuJ3aKA5E/view?usp=sharing)
+
+## Assignment
+
+Use the [Google Vision API demo](https://cloud.google.com/vision/) (mid-page where it says "Try the API") and drag a picture into the box. Take a look at the results in each tab, and post into Slack a screenshot of your most interesting result.
+
+<a name="class11"></a>
+
+# Class 11 • Bespoke machine learning for sorting text
+
+We're back in [Google Colab Notebooks](https://colab.research.google.com).
+
+We used two notebooks this class. For the first exercise: 
+
+- go to [Google Colab Notebooks](https://colab.research.google.com)
+- pick `Github`
+- type `Quartz` and enter
+- pick the notebook titled `gg-sort-tweets-with-fastai.ipynb`
+
+For the second exercise:
+
+- go to [Google Colab Notebooks](https://colab.research.google.com)
+- pick `Github`
+- type `Quartz` and enter
+- pick the notebook titled `ii-extracting-entities-plus-similarity.ipynb`
+
+## Assignment
+
+You got lucky because I forgot to incorporate the assignment into the lesson as I had planned ... so everyone gets assignment credit for this class.
+
+<a name="class12"></a>
+
+## Class 12 
+
+Here's a PDF of the [slides for this class](https://www.dropbox.com/s/o5aq7lkzgsne9pv/Class12-Sensors.pdf?dl=0).
+
+## Assignment
+
+With a class partner, successfully build the liquid-conductivity sensor! If you are not in class this day, arrange with me to build it another time (must be during or before Class 15). 

@@ -91,29 +91,31 @@ Then we'll look at how Airtable spreadsheets can be the basis of your online dat
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class9">Notes for this class</a>.
 
-## Class 10 • Introduction to AI for journalism
+## Class 10 • Intro to AI for journalism
 
 Artificial intelligence is a huge field, and the use of AI by corporations and governments is a huge issue in our society. The algorithms themselves, however, are not inherently problematic and can be used by responsible journalists to help in their investigations. We'll explore some of the services available and how you might use them for your journalism.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class10">Notes for this class</a>. -->
+You'll also get hands-on experience using an open-source machine learning library to solve a specific problem of finding images in a huge pile of data, as you might have to do for a journalistic investigation.
 
-## Class 11 • Bespoke machine learning for finding images
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class10">Notes for this class</a>.
 
-You'll get hands-on experience using an open-source machine learning library to solve a specific problem of finding images in a huge pile of data, as you might have to do for a journalistic investigation.
+## Assignment
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>. -->
+Use the [Google Vision API demo](https://cloud.google.com/vision/) (mid-page where it says "Try the API") and drag a picture into the box. Take a look at the results in each tab, and post into Slack a screenshot of your most interesting result.
 
-## Class 12 • Bespoke machine learning for sorting text
+## Class 11 • Bespoke machine learning for sorting text
 
 You'll get more hands-on experience in machine learning, this time to sort text documents into useful categories -- helping you do in hours what might otherwise take you days.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class12">Notes for this class</a>. -->
+<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>. -->
 
-## Class 13 • Physical computing: From the laptop for the tabletop
+## Class 12 • Physical computing: From the laptop for the tabletop
 
 Tiny computers can sense the environment or respond to your commands. They can even keep track of things when you're far away. Prototyping these kinds of products is surprisingly cheap and easy. We'll do it in class.
 
 <!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class13">Notes for this class</a>. -->
+
+## Class 13 • Coming soon!
 
 ## Class 14 • Data security: For you, your sources, and your audience
 
