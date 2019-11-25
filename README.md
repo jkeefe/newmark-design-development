@@ -99,13 +99,10 @@ You'll also get hands-on experience using an open-source machine learning librar
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class10">Notes for this class</a>.
 
-## Assignment
-
-Use the [Google Vision API demo](https://cloud.google.com/vision/) (mid-page where it says "Try the API") and drag a picture into the box. Take a look at the results in each tab, and post into Slack a screenshot of your most interesting result.
-
 ## Class 11 • Bespoke machine learning for sorting text
 
 You'll get more hands-on experience in machine learning, this time to sort text documents into useful categories -- helping you do in hours what might otherwise take you days.
+
 
 <!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>. -->
 
