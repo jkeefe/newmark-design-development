@@ -104,21 +104,26 @@ You'll also get hands-on experience using an open-source machine learning librar
 You'll get more hands-on experience in machine learning, this time to sort text documents into useful categories -- helping you do in hours what might otherwise take you days.
 
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>.
 
-## Class 12 • Physical computing: From the laptop for the tabletop
+## Class 12 • Sensors & Physical computing: From the laptop for the tabletop
 
 Tiny computers can sense the environment or respond to your commands. They can even keep track of things when you're far away. Prototyping these kinds of products is surprisingly cheap and easy. We'll do it in class.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class13">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class12">Notes for this class</a>.
 
-## Class 13 • Coming soon!
+## Class 13 • AMA: Journalism Grab Bag
+
+Based on your requests, we'll talk about online investigations, story automation, searching voter rolls and more.
+
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class13">Notes for this class</a>.
+
 
 ## Class 14 • Data security: For you, your sources, and your audience
 
 Let's talk about security. We'll get into how you can start practicing better personal security and about how to act responsibly and ethically with the data you get from others.
 
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class14">Notes for this class</a>. -->
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class14">Notes for this class</a>.
 
 ## Class 15 • Review, discussion, and real-world production
 

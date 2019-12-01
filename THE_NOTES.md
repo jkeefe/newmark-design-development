@@ -993,10 +993,66 @@ You got lucky because I forgot to incorporate the assignment into the lesson as 
 
 <a name="class12"></a>
 
-## Class 12 
+# Class 12 • Sensors & Physical computing: From the laptop for the tabletop
 
 Here's a PDF of the [slides for this class](https://www.dropbox.com/s/o5aq7lkzgsne9pv/Class12-Sensors.pdf?dl=0).
 
 ## Assignment
 
 With a class partner, successfully build the liquid-conductivity sensor! If you are not in class this day, arrange with me to build it another time (must be during or before Class 15). 
+
+<a name="class13"></a>
+
+# Class 13 • AMA: Journalism Grab Bag
+
+## Automation
+
+- Slide deck is here
+- [Addressing micro-audiences at scale](https://drive.google.com/file/d/1CJvITDxHEbPKMUO4Pq457N8BvuEZHrGk/view)
+
+## Digital investigations
+
+### Brooklyn Voter Purge (WNYC)
+
+- [60,000 Fewer Democrats in Brooklyn and No Clear Reason Why](https://www.wnyc.org/story/democratic-voter-rolls-drop-more-60000-brooklyn-presidential-primary/?utm_source=local&utm_medium=treatment&utm_campaign=daMost&utm_content=damostviewed)
+- [De Blasio Demands Explanation, as Decline in Registered Brooklyn Voters Doubles](https://www.wnyc.org/story/de-blasio-demands-explanation-boe-drops-126000-brooklyn-democrats)
+- [Brooklyn Voter Purge Hit Hispanics Hardest](https://www.wnyc.org/story/brooklyn-voter-purge-hit-hispanics-hardest/)
+- [Board of Elections Returns Purged Brooklyn Voters to Rolls](https://www.wnyc.org/story/board-elections-returns-purged-brooklyn-voters-rolls/)
+- [City Board of Elections Admits It Broke the Law, Accepts Reforms](https://www.wnyc.org/story/city-board-elections-admits-it-broke-law-accepts-reforms/)
+
+### Political Ads (Quartz)
+
+- [Political Ad Collector](https://projects.propublica.org/political-ad-collector/)
+- [Facebook Ad Library](https://www.facebook.com/ads/library/)
+- [Current Trump Ads](https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&impression_search_field=has_impressions_lifetime&view_all_page_id=153080620724)
+- [Trump is using impeachment to collect new supporters with Facebook ads](https://qz.com/1735875/trump-is-using-impeachment-to-collect-new-maga-fans-on-facebook/)
+
+### Interrogating Black Boxes (ProPublica)
+
+- [Minority Neighborhoods Pay Higher Car Insurance Premiums Than White Areas With the Same Risk](https://www.propublica.org/article/minority-neighborhoods-higher-car-insurance-premiums-white-areas-same-risk)
+- [Machine Bias: There’s software used across the country to predict future criminals. And it’s biased against blacks.](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
+
+## Tips for working with newsroom developers & designers
+
+- Get them involved early: at the idea/notion stage
+- Collaborate with them as the journalists they are (not as a service desk)
+- Aim to build something that does *one thing well*
+- Brainstorm ideas with them
+- Be prepared to do the data digging, finding, FOIA-ing
+- Work out a system where *you* clean the data (you'll get more insights!)
+- Otherwise work on the project *together* when possible
+- Be clear about your hopes and goals for the final result
+- Avoid "fishing expeditions" (ie: "Can you see if there is a story here?")
+- Related: Avoid "data dumping" on your audience (ie: "Do you see a story here?")
+- Be patient
+- Watch for places where you're fine skipping certain features
+- Be firm about places where you are not
+
+- If you need help on your own code ...
+    - Make sure to use a "linter" to check for typos
+    - Try to frame the problem in a tweet (the act of doing so can help solve the problem and/or zero in on it)
+    - Be sure to Google the problem first (someone else has had this issue, too)
+    - Be clear about what you've already tried
+    
+
+
