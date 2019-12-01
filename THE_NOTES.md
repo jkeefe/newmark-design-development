@@ -1032,6 +1032,11 @@ With a class partner, successfully build the liquid-conductivity sensor! If you 
 - [Minority Neighborhoods Pay Higher Car Insurance Premiums Than White Areas With the Same Risk](https://www.propublica.org/article/minority-neighborhoods-higher-car-insurance-premiums-white-areas-same-risk)
 - [Machine Bias: There’s software used across the country to predict future criminals. And it’s biased against blacks.](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
 
+### Investigation tools
+
+- See this [fabulous slide deck from ONA](https://www.slideshare.net/onlinenewsassociation/digital-forensics-using-social-and-online-tools-to-find-great-stories-ona19) (In class, we'll start with Jane Lytvynenko on slide 31.)
+- Or the [full video here](https://livestream.com/accounts/26035773/events/8806759/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false).
+
 ## Tips for working with newsroom developers & designers
 
 - Get them involved early: at the idea/notion stage
@@ -1054,5 +1059,8 @@ With a class partner, successfully build the liquid-conductivity sensor! If you 
     - Be sure to Google the problem first (someone else has had this issue, too)
     - Be clear about what you've already tried
     
+## Assignment 
+
+Try three of "Jane's tools and resources" ([on slide 49 of this deck](https://www.slideshare.net/onlinenewsassociation/digital-forensics-using-social-and-online-tools-to-find-great-stories-ona19)) to get a feel for how they work. Post a screen shot of something interesting you found using each tool (so three images total) into the shared Slack channel. Due by noon on December 9, 2019.
 
 
