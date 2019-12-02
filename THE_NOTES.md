@@ -1007,8 +1007,9 @@ With a class partner, successfully build the liquid-conductivity sensor! If you 
 
 ## Automation
 
-- Slide deck is here
+- [Slide deck is here](https://www.dropbox.com/s/ck5j868xnk8k9kt/Class13-Automation.pdf?dl=0)
 - [Addressing micro-audiences at scale](https://drive.google.com/file/d/1CJvITDxHEbPKMUO4Pq457N8BvuEZHrGk/view)
+- [EngagedCitizens.us](https://engagedcitizens.us/#meeting-archive)
 
 ## Digital investigations
 
