@@ -712,6 +712,11 @@ $ GET https://api.coinbase.com/v2/prices/spot?currency=USD
 - The current price of one bitcoin is ${{data.amount}} dollars.
 ```
 
+## Assignment
+
+Make an IFTTT recipe, take a screenshot of the rule and that you've toggled it to "Connected" and post that screenshot in Slack.
+
+
 <a name="class8"></a>
 
 # Class 8 • APIs and the people who love them
