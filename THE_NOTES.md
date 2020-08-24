@@ -12,12 +12,10 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 
 - A bit about me
     - [Personal website](https://johnkeefe.net)
-    - [Work website](https://qz.com)
-    - [Quartz Bot Studio](https://bots.qz.com)
     - [Quartz AI Studio](https://qz.ai/)
     - Twitter: [@jkeefe](https://twitter.com/jkeefe)
     - Email: john.keefe (at) journalism.cuny.edu
-    - Slack is better! [Here's our Slack](https://socialjournalism2019.slack.com).
+    - Slack is better! [Here's our Slack](https://socialjournalism2020.slack.com).
     
 ## Products in Journalism
 
@@ -48,7 +46,7 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 ## Logistics & plan
 
 - Go through the Syllabus.
-- Everyone in the Slack! [Join here](https://join.slack.com/t/cunylab/signup) and use your school email address.
+- Everyone in the Slack! [Join here](https://socialjournalism2020.slack.com) and use your school email address. Use channel **#design-development**.
 
 ## Exploring web pages
 
