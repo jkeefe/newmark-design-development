@@ -38,25 +38,27 @@ Here's the rundown of what we'll cover in our weeks together. Note that the full
 
 First we'll meet each other and review the plan for this class.
 
-Then we'll dive in, making sure we all understand how information zips around the internet and the basics of an that most basic of internet services: A web page. We'll craft a basic "static" page using Glitch, review all of its components, and then make a simple "dynamic" site.
+Then we'll dive in, making sure we all understand how information zips around the internet and the basics of the most basic of internet services: A web page. We'll craft a basic "static" page using Glitch.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class1">Notes for this class</a>.
 
-## Class 2 • Roll your own information service
+## Class 2 • Introduction to databases
 
-When your project needs relies on custom data only you have, you may need to get into some code. We'll add a database to our service to serve up data available nowhere else.
+We'll set up and explore a dog database, using simple "SQL" statements to get information out of it. 
+
+Then we'll load that same database into our Glitch site and make some simple queries from there, too, by changing the url of our page.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class2">Notes for this class</a>.
 
-## Class 3 • Texting as a service
+## Class 3 • Making a dynamic webpage
 
-Today we'll turn our sweet service into a tool you can use via texting.
+We'll take our dog website to the next level by adding forms that query our database.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class3">Notes for this class</a>.
 
-## Class 4 • Introduction to conversational interfaces
+## Class 4 • Introduction to conversational interfaces (aka chatbots)
 
-From chatbot platforms like Facebook Messenger to voice services such as Alexa and Google Home, there are more ways for your audience to talk directly to your creation using natural human language. We'll talk about how conversational interfaces work, and how to play and build with them using Dialogflow.
+From chatbot platforms like Facebook Messenger to voice services such as Alexa and Google Home, there are more ways for your audience to talk directly to your creation using natural human language. We'll talk about how conversational interfaces work and build a simple web chatbot using Dialogflow.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class4">Notes for this class</a>.
 
@@ -66,13 +68,27 @@ We'll weave our original service into our conversational system, making a specia
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class5">Notes for this class</a>.
 
-## Class 6 • Storytelling with chat & voice
+## Class 6 • Getting insights with forms
 
-Now that you know the basics of how to build a conversational interface, we'll talk about the best practices for designing and crafting these automated conversations, and how they can keep track of context. We'll also talk about ways to quickly prototype voice interactions on your friends or possible customers without building a whole chat agent.
+We'll make sure you know how to use easy, free form software to collect information from your audience and encourage participation. We'll take a close look at 3 services: Google Forms, Airtable, and Typeform.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class6">Notes for this class</a>.
 
-## Class 7 • Make bots to do your bidding
+## Class 7 • Chatbots for collecting information in real time
+
+We'll mash up what you know about forms, chatbots, and Glitch to build a chatbot that asks questions and saves the answers. 
+
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class7">Notes for this class</a>.
+
+
+
+## Class 8 • Identifying and communicating your hopes and dreams
+
+Let's bring what we've learned so far into your community project. We'll outline what you hope to achieve, how it would work, and how you can scope out your ideas for someone else to help you build them.
+
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class8">Notes for this class</a>.
+
+## Class 9 • Make bots to do your bidding
 
 - Every time Donald Trump tweets, put it in a spreadsheet
 - Every time it's at or below 32 degrees send a tweet
@@ -83,60 +99,38 @@ Now that you know the basics of how to build a conversational interface, we'll t
 
 All of this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.
 
-<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class7">Notes for this class</a>.
-
-## Class 8 • APIs and the people who love them
-
-Valuable data is everywhere. Let's get it.
-
-Weather info, crypto prices, earthquake alerts -- it's all available, and ready to be shaped into a new product nobody's made before (maybe). We'll learn how to find and use that data.
-
-<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class8">Notes for this class</a>.
-
-## Class 9 • Making Supercharged Spreadsheets
-
-From web site analytics to stock prices, making dashboards to track your numbers may be the most important product you build, even if just for yourself. We'll use APIs and spreadsheets to make 'em fast.
-
-Then we'll look at how Airtable spreadsheets can be the basis of your online database, using their unique API.
-
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class9">Notes for this class</a>.
 
-## Class 10 • Intro to AI for journalism
+## Class 10 • APIs, scraping and other data sources
 
-Artificial intelligence is a huge field, and the use of AI by corporations and governments is a huge issue in our society. The algorithms themselves, however, are not inherently problematic and can be used by responsible journalists to help in their investigations. We'll explore some of the services available and how you might use them for your journalism.
-
-You'll also get hands-on experience using an open-source machine learning library to solve a specific problem of finding images in a huge pile of data, as you might have to do for a journalistic investigation.
+Valuable data is everywhere. Let's get it. Weather info, crypto prices, earthquake alerts -- it's all available. We'll also run through web scraping and open-data mining.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class10">Notes for this class</a>.
 
-## Class 11 • Bespoke machine learning for sorting text
+## Class 11 • Sensors & Physical computing
 
-You'll get more hands-on experience in machine learning, this time to sort text documents into useful categories -- helping you do in hours what might otherwise take you days.
-
+Tiny computers can sense the environment, respond to your commands, and collect data that's not available anywhere else. They can even keep track of things when you're far away. Prototyping these kinds of products is surprisingly cheap and easy. We'll do it in class.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>.
 
-## Class 12 • Sensors & Physical computing: From the laptop for the tabletop
+## Class 12 • Intro to AI for journalism
 
-Tiny computers can sense the environment or respond to your commands. They can even keep track of things when you're far away. Prototyping these kinds of products is surprisingly cheap and easy. We'll do it in class.
+Artificial intelligence is a huge field, and the use of AI by corporations and governments is a huge issue in our society. The algorithms themselves, however, are not inherently problematic and can be used by responsible journalists to help in their investigations. We'll explore some of the services available and how you might use them for your journalism.
+
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class12">Notes for this class</a>.
 
-## Class 13 • AMA: Journalism Grab Bag
+## Class 13 • Data security: For you, your sources, and your audience
 
-Based on your requests, we'll talk about online investigations, story automation, searching voter rolls and more.
+Let's talk about security. We'll get into how you can start practicing better personal security and about how to act responsibly and ethically with the data you get from others.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class13">Notes for this class</a>.
 
 
-## Class 14 • Data security: For you, your sources, and your audience
+## Class 14 • Managing a technical project
 
-Let's talk about security. We'll get into how you can start practicing better personal security and about how to act responsibly and ethically with the data you get from others.
+We'll talk about how to communicate with developers, assess the project as it progresses, adjust to blockers, and reach a successful state.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class14">Notes for this class</a>.
 
-## Class 15 • Review, discussion, and real-world production
 
-In our last class we'll talk about your projects in other classes, future projects, and what it takes to scale and secure the examples we've been talking about.
-
-<!-- <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class15">Notes for this class</a>. -->
