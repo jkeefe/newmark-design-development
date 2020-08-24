@@ -1,38 +1,28 @@
-[The Syllabus](./README.md) | [The Notes](./THE_NOTES.md)
+[The Syllabus](./README.md) | [The Fine Print](./THE_FINE_PRINT.md) | [The Notes](./THE_NOTES.md)
 
 # Design & Development
 
-Come explore what's next in news delivery and audience engagement, and prototype your ideas. Throughout the industry, we see that the ability to build journalistic products is key, not just in startups from Vox to Quartz but also in big media companies of all sorts, from The New York Times to CNN to WNYC to a metro newspaper. This class will help you imagine and prototype new products and services -- and in the process reimagine journalism itself and how it connects with and serves the public.
+Welcome to Design & Development, updated for the Fall 2019 term.
 
-We'll experiment with telling news stories through channels such as instant messaging, watches, intelligent agents like Google Home and even household objects. You will learn essential skills to develop, grow, test and retry how you use information in a two-way exchange with your community.
+You don't need to be a developer to come up with the next big idea for a product or service that connects communities digitally, or taps a way to collect information that helps communities make decisions. But you do need basic knowledge of design and digital structure so you can work with developers and bring your idea from concept to implementation.
 
-You'll also learn how to sketch out your technical hopes and dreams so that others might help you code and build it, too.
+Plus, with a little know-how you can build functioning prototypes to help test and play with your idea -- providing an example with which you can then work with a developer to create a robust, secure and efficient product or service.
 
-Welcome!
+This course prepares students to work successfully with designers and developers -- from understanding fundamental design principles, to embracing programmers’ unique coding culture, to having a general knowledge of various programming languages, to knowing the steps and milestones that designers and developers expect to have clearly delineated for them by their clients.
 
-## Class Objectives
+We're going to learn how to play, experiment, learn, and tinker as we toy with new ways to experience and consume information. This is a hands-on class, and participation is key. Let's have some fun and make great things -- or at least learn a lot trying.
 
-When you're done with this class, my aim is that you'll leave with the following knowledge and experience:
+### The Fine Print
 
-- An overview and basic understanding of how to build and/or direct technical projects for journalism
-- Understand how to connect with your audiences using custom data and information
-- Get experience collecting data from your audience to collaborate and report
-- Facility in building and using conversational interfaces / chatbots
-- Familiarity with APIs
-- Exposure to a collection of other technical possibilities for your project
+The class description, dates, logistics, rules, and grading details are in a document I call "[the fine print](./THE_FINE_PRINT.md)."
 
-Additionally, I want to make sure you can enhance your project through:
+### The Notes
 
-- Articulate your projects’ technical and aesthetic needs
-- Wireframe a detailed model of your product, service or site.
-- Write a clear scope of their project to communicate with developers
-- Collaborate efficiently with developers and designers
-- Manage a product development cycle by receiving external feedback from community clients, as well as internally from developers and designers
-
+Along the way, the code and steps we'll take are outlined in [The Notes](./THE_NOTES.md).
 
 # The Syllabus
 
-Here's the rundown of what we'll cover in our weeks together. Note that the full syllabus, with grading and other details, is in a [Google Doc available to students](https://docs.google.com/document/d/18NGVFxtoaJ3dAtNInjoG1b5Hb6TmSgkl7DBBbeBVTvk/edit).
+Here's the rundown of what we'll cover in our weeks together:
 
 ## Class 1 • Basic internetting
 
