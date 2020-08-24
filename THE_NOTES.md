@@ -17,9 +17,13 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
     - Email: john.keefe (at) journalism.cuny.edu
     - Slack is better! [Here's our Slack](https://socialjournalism2020.slack.com).
     
-## Products in Journalism
+## Engagement Projects in Journalism
 
-- Presentation: Overview of products in Journalism
+- Overview of engagement projects in journalism
+    - [KPCC/LAist Coronavirus Answers](https://laist.com/2020/04/17/can-you-get-coronavirus-from-tap-water-faucet-sewage.php)
+    - [ProPublica's Get Involved page](https://www.propublica.org/getinvolved)
+    - Electionland Bot
+    - [First Draft SMS course](https://firstdraftnews.org/latest/course-training-us-election-misinformation/)
 
 - A bit about you
     - Name
@@ -41,7 +45,6 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 
 - SMS bot: Text "hi" to `(646) 699-3322`
 - Better Weather
-- Hot duck: [hotduck.today](http://hotduck.today/)
 
 ## Logistics & plan
 
