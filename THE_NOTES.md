@@ -17,18 +17,21 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
     - Email: john.keefe (at) journalism.cuny.edu
     - Slack is better! [Here's our Slack](https://socialjournalism2020.slack.com).
     
+- A bit about you
+    - Name
+    - Where you're from
+    - What's your Social J area of interest?
+    
 ## Engagement Projects in Journalism
 
 - Overview of engagement projects in journalism
     - [KPCC/LAist Coronavirus Answers](https://laist.com/2020/04/17/can-you-get-coronavirus-from-tap-water-faucet-sewage.php)
     - [ProPublica's Get Involved page](https://www.propublica.org/getinvolved)
-    - Electionland Bot
     - [First Draft SMS course](https://firstdraftnews.org/latest/course-training-us-election-misinformation/)
-
-- A bit about you
-    - Name
-    - Where you're from
-    - What's your Social J area of interest?
+    - Electionland Bot ... pick a method:
+        - Text VOTE, VOTA (for Spanish), or 投票 (for Chinese) to 81380
+        - Message us at 1 850 909-8683 on WhatsApp
+        - or visit [Electionland on Facebook Messenger](https://m.me/electionland)
 
 ## What's a Prototype (for us)?
 
@@ -45,6 +48,8 @@ Here's where you'll find resources, code, links, and notes for every class. Mate
 
 - SMS bot: Text "hi" to `(646) 699-3322`
 - Better Weather
+    - [The Skill](https://www.amazon.com/Really-Good-Smarts-LLC-Weather/dp/B07BRF678K/)
+    - [The Source](https://forecast.weather.gov/MapClick.php?lat=40.74913000000009&lon=-73.99236000000002#.X0e8OtNKjOR)
 
 ## Logistics & plan
 
