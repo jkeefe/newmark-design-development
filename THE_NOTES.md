@@ -245,7 +245,7 @@ app.get('/topnames', function(request,response) {
 
 _This is the "Class 2" assignment. Do it now ... it's due on at high noon before Class 3._
 
-Add a new "route" to your web service that, when hit by a web browser, displays a list of the top 5 dog breeds (by count) in the database. Paste a link to that route into Slack.
+Add a new "route" to your web service called "topbreeds" that, when hit by a web browser, returns a list of the top 5 dog breeds (by count) in the database. Submit that link in the form here.
 
 
 <a name="class3"></a>
