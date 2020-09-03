@@ -83,13 +83,6 @@ Start a new `hello-webpage` project in Glitch and make it your own. Change color
 - Use the full url to add it to `index.html` using `<img src = "[URL OF IMAGE]" >` 
 - (note image tag is one of the few in html without a closing tag. so no `</img>`.
 
-## A little more advanced Internetting
-
-- Search for `jkeefe` or go to [https://glitch.com/@jkeefe](https://glitch.com/@jkeefe)
-- Find `newmark-bark`
-- Remix it!
-- Name it `[yourname]-bark`
-
 ## A different structure
 
 ### "Static"
@@ -103,9 +96,10 @@ What we did last week:
 
  Instead of Glitch just serving up your fixed or *static* html page (as in Class 1) you're using a "server" file that serves up the page.
  
-- Go to Glitch
-- Use the search function to find my projects `jkeefe`
-- Find the "Newmark-Bark" project and "Remix" it
+ - Search for `jkeefe` or go to [https://glitch.com/@jkeefe](https://glitch.com/@jkeefe)
+ - Find `newmark-bark`
+ - Remix it!
+ - Name it `[yourname]-bark`
 
 Let's take a look around ...
 
