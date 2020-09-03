@@ -86,7 +86,7 @@ Start a new `hello-webpage` project in Glitch and make it your own. Change color
 ## A little more advanced Internetting
 
 - Search for `jkeefe` or go to [https://glitch.com/@jkeefe](https://glitch.com/@jkeefe)
-- Find `newmark-bark-2020`
+- Find `newmark-bark`
 - Remix it!
 - Name it `[yourname]-bark`
 
