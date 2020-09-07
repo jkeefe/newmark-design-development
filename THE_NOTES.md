@@ -268,7 +268,7 @@ Also remember we can put these queries into our "server.js" file on Glitch.
 
 We're going to provide a _service_ to our audience by making it super easy for them to find out how many dogs are named like theirs.
 
-**Block 3***
+**Block 3**
 
 ```javascript
 app.get('/name/max', function(request,response) {
@@ -286,7 +286,7 @@ app.get('/name/max', function(request,response) {
 
 - note that we're changing "max" to a variable called `:input` ... and then using that in the SQL query as `${request.params.input}`.
 
-**Block 3A***
+**Block 3A**
 
 ```javascript
 app.get('/name/:input', function(request,response) {
@@ -304,7 +304,7 @@ app.get('/name/:input', function(request,response) {
 
 Let's build a lookup form!
 
-**Block 4***
+**Block 4**
 
 First we need a _route_ to our form.
 
@@ -364,6 +364,8 @@ That route will send anyone who adds `/form` to the end of the url to a page cal
 </body>
 </html>
 ```
+
+## Assignment
 
 _This is the "Class 03" assignment. Do it now ... it's due on at high noon before Class 04._
 
