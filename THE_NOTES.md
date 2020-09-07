@@ -241,8 +241,139 @@ _This is the "Class 2" assignment. Do it now ... it's due on at high noon before
 
 Add a new "route" to your web service called "topbreeds" that, when hit by a web browser, returns a list of the top 5 dog breeds (by count) in the database. Submit that link in the form here.
 
-
 <a name="class3"></a>
+
+# Class 3 • Making a dynamic webpage
+
+The is [outlined in a video] so you can go at your own pace. Pause, speed up, go back.
+
+We've been making what's known as an **API**. Officially, API stand for Application Program Interface. But I like to think of it as Another Person's Information. It's a way to get information from data on the web ... even though you usually don't actually _see_ it. It's often happening in the background.
+
+Let's make an API specifically for providing data on how many dogs are named ... whatever name we're asked.
+
+## Quick SQL review
+
+Remember, we used SQL to query the database for information.
+
+The syntax, again, is: `SELECT [columns or pseudo-columns] FROM [table] ... [more options]`
+
+- `SELECT dog_name, breed FROM dogs LIMIT 10;`
+- `SELECT count() FROM dogs;`
+- `SELECT count() FROM dogs WHERE dog_name LIKE "bella";`
+- `SELECT dog_name, count() as total FROM dogs WHERE dog_name LIKE "bella";`
+
+Also remember we can put these queries into our "server.js" file on Glitch.
+
+## Making a lookup form on our site
+
+We're going to provide a _service_ to our audience by making it super easy for them to find out how many dogs are named like theirs.
+
+**Block 3***
+
+```javascript
+app.get('/name/max', function(request,response) {
+  db.all(`SELECT dog_name, count(dog_name) at total FROM dogs WHERE dog_name LIKE "max"`, function(err, rows) {
+    
+    if (err) {
+      console.log(err)
+    }
+    
+    response.send(JSON.stringify(rows))
+    
+  })
+})
+```
+
+- note that we're changing "max" to a variable called `:input` ... and then using that in the SQL query as `${request.params.input}`.
+
+**Block 3A***
+
+```javascript
+app.get('/name/:input', function(request,response) {
+  db.all(`SELECT dog_name, count(dog_name) AS total FROM dogs WHERE dog_name LIKE "${request.params.input}"`, function(err, rows) {
+    
+    if (err) {
+      console.log(err)
+    }
+    
+    response.send(JSON.stringify(rows))
+    
+  })
+})
+```
+
+Let's build a lookup form!
+
+**Block 4***
+
+First we need a _route_ to our form.
+
+In your `server.js` file, add this route. For organization's sake, put it right after the first route ... the one that sends people to `index.html`.
+
+```javascript
+app.get('/form', function(request, response) {
+  response.sendFile(__dirname + '/views/form.html');
+});
+```
+
+That route will send anyone who adds `/form` to the end of the url to a page called `form.html` ... which doesn't exist yet! So let's make that.
+
+- In the left-hand column, find `/views` and click on the three little dots.
+- Pick "Add file to Folder"
+- Call it `form.html`
+- Click on that new file, `form.html`
+- Into the big blank box in the middle of the screen, paste Block 5:
+
+**Block 5**
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <form>
+        What's your dog's name?<br>
+        <input type="text" id="dog_box" onkeyup="hitAPI()"><br>
+    </form>
+    <div id="answer_line"></div>
+
+    <script>
+        function hitAPI() {
+          
+            var input_name = document.getElementById("dog_box").value
+            var xhttp = new XMLHttpRequest()
+            
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    data = JSON.parse(this.responseText)
+                    total_dogs = 
+                    name = data[0].dog_name
+                  document.getElementById("answer_line").innerHTML = `There are ${data[0].total} dogs named ${input_name} in NYC.`
+                }
+            }
+                
+            if (input_name != "") {
+              xhttp.open("GET", `/name/${input_name}`, true)
+              xhttp.send()
+            } else {
+              document.getElementById("answer_line").innerHTML = ""
+            }
+                    
+        }
+    </script>
+</body>
+</html>
+```
+
+_This is the "Class 03" assignment. Do it now ... it's due on at high noon before Class 04._
+
+Complete the steps above so that your form _works_ and answers the question for any name I enter. Paste the _Show_ URL into the form below and submit it by the deadline. The URL should be like `my-bark-site.glitch.me/form`.
+
+_If you get stuck_ try backing up and following my steps again. If you still can't get it to work:
+
+1. Copy-paste or take a screenshot of your code and post it in the `#design-development` channel in the social-j Slack and @ me. Don't wait until the last minute to do this though!
+2. Plan to stick around for the hands-on-help session in the last part of class Thursday.
+
 <a name="class4"></a>
 <a name="class5"></a>
 <a name="class6"></a>
