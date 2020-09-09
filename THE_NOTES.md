@@ -304,27 +304,14 @@ app.get('/name/:input', function(request,response) {
 
 Let's build a lookup form!
 
-**Block 4**
-
-First we need a _route_ to our form.
-
-In your `server.js` file, add this route. For organization's sake, put it right after the first route ... the one that sends people to `index.html`.
-
-```javascript
-app.get('/form', function(request, response) {
-  response.sendFile(__dirname + '/views/form.html');
-});
-```
-
-That route will send anyone who adds `/form` to the end of the url to a page called `form.html` ... which doesn't exist yet! So let's make that.
-
 - In the left-hand column, find `/views` and click on the three little dots.
 - Pick "Add file to Folder"
 - Call it `form.html`
 - Click on that new file, `form.html`
-- Into the big blank box in the middle of the screen, paste Block 5:
+- Into the big blank box in the middle of the screen, paste Block 4:
 
-**Block 5**
+
+**Block 4**
 
 ```html
 <!DOCTYPE html>
@@ -364,6 +351,19 @@ That route will send anyone who adds `/form` to the end of the url to a page cal
 </body>
 </html>
 ```
+
+Now we need a _route_ to our form.
+
+**Block 5**
+
+In your `server.js` file, add this route. For organization's sake, put it right after the first route ... the one that sends people to `index.html`.
+
+```javascript
+app.get('/form', function(request, response) {
+  response.sendFile(__dirname + '/views/form.html');
+});
+```
+
 
 ## Assignment
 
