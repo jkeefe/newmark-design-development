@@ -333,8 +333,6 @@ Let's build a lookup form!
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     data = JSON.parse(this.responseText)
-                    total_dogs = 
-                    name = data[0].dog_name
                   document.getElementById("answer_line").innerHTML = `There are ${data[0].total} dogs named ${input_name} in NYC.`
                 }
             }
