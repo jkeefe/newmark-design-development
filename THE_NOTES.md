@@ -272,7 +272,7 @@ We're going to provide a _service_ to our audience by making it super easy for t
 
 ```javascript
 app.get('/name/max', function(request,response) {
-  db.all(`SELECT dog_name, count(dog_name) at total FROM dogs WHERE dog_name LIKE "max"`, function(err, rows) {
+  db.all(`SELECT dog_name, count(dog_name) as total FROM dogs WHERE dog_name LIKE "max"`, function(err, rows) {
     
     if (err) {
       console.log(err)
