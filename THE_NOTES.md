@@ -245,18 +245,33 @@ Add a new "route" to your web service called "topbreeds" that, when hit by a web
 
 # Class 3 • Making a dynamic webpage
 
-## Examples
+## Reset from last week
+
+- Be sure to submit your attendance report
+- Code live vs. video
+- "topbreeds"
+- Any troubles?
+
+## Data for the web
+
+We've been making what's known as an **API**. Officially, API stand for Application Program Interface. But I like to think of it as Another Person's Information. It's a way to get information from data on the web ... even though you usually don't actually _see_ it. It's often happening in the background.
+
+- [Nursing home inspect](https://projects.propublica.org/nursing-homes/) | ProPublica
+- [The NYPD files](https://projects.propublica.org/nypd-ccrb/) | ProPublica
+- [Tracking Covid at US Colleges](https://www.nytimes.com/interactive/2020/us/covid-college-cases-tracker.html) | New York Times
+- [The Weather](https://www.weather.gov/) | Weather.gov
+- [Pollen Counts](https://www.aaaai.org/global/nab-pollen-counts) | AAAAI
+
+Let's make an API specifically for providing data on how many dogs are named ... whatever name we're asked ... and then make it easy to use.
+
+- It will [look like this](https://newmark-bark.glitch.me/form) when it's done!
 
 ## Code walk-through
 
 <iframe src="https://player.vimeo.com/video/456422529?title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/456422529">Design &amp; Development - 03 Walkthrough</a> from <a href="https://vimeo.com/jkeefe">John Keefe</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-The code walk-through is [recorded and posted on Vimeo](https://vimeo.com/456422529) so you can go at your own pace. Pause, speed up, go back.
-
-We've been making what's known as an **API**. Officially, API stand for Application Program Interface. But I like to think of it as Another Person's Information. It's a way to get information from data on the web ... even though you usually don't actually _see_ it. It's often happening in the background.
-
-Let's make an API specifically for providing data on how many dogs are named ... whatever name we're asked.
+The code walk-through is embeded above and also [posted on Vimeo](https://vimeo.com/456422529) so you can go at your own pace — pause, speed up, go back. (Note that, oddly, the speed controls are only available on the embedded version above; they don't show up on the Vimeo site.)
 
 ## Quick SQL review
 
