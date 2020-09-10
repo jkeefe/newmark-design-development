@@ -256,6 +256,7 @@ Add a new "route" to your web service called "topbreeds" that, when hit by a web
 
 We've been making what's known as an **API**. Officially, API stand for Application Program Interface. But I like to think of it as Another Person's Information. It's a way to get information from data on the web ... even though you usually don't actually _see_ it. It's often happening in the background.
 
+- [How to vote in your state](https://www.washingtonpost.com/elections/2020/how-to-vote/) | Washington Post
 - [Nursing home inspect](https://projects.propublica.org/nursing-homes/) | ProPublica
 - [The NYPD files](https://projects.propublica.org/nypd-ccrb/) | ProPublica
 - [Tracking Covid at US Colleges](https://www.nytimes.com/interactive/2020/us/covid-college-cases-tracker.html) | New York Times
@@ -391,10 +392,10 @@ _This is the "Class 03" assignment. Do it now ... it's due on at high noon befor
 
 Complete the steps above so that your form _works_ and answers the question for any name I enter. Paste the _Show_ URL into the form below and submit it by the deadline. The URL should be like `my-bark-site.glitch.me/form`.
 
-_If you get stuck_ try backing up and following my steps again. If you still can't get it to work:
+_If you get stuck_ try backing up and following my steps again. If you still can't get it to work, you have options:
 
-1. Copy-paste or take a screenshot of your code and post it in the `#design-development` channel in the social-j Slack and @ me. Don't wait until the last minute to do this though!
-2. Plan to stick around for the hands-on-help session in the last part of class Thursday.
+1. Go to the `#design-development` channel in the social-j Slack and post the "edit" link to your code. That link will begin like this: `https://glitch.com/edit/#!/your-project ...`. Include a short description of what's not working and what you've already tried. 
+2. Join my "helpdesk hours" Wednesday at 12:30 pm. The link for that has been added to the syllabus and will be posted in the `#design-development` chat every Wednesday morning.
 
 <a name="class4"></a>
 <a name="class5"></a>
