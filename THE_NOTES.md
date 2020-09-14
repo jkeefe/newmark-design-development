@@ -545,16 +545,21 @@ Interestingly, most natural language systems allow you to review its decisions a
 
 There are lots of tools out there to use to make bots. We'll play with [Dialogflow](https://dialogflow.cloud.google.com).
 
+Follow the instructions in this week's coding walk-through video:
+
+<iframe src="https://player.vimeo.com/video/457600740" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+You can also see the video [on the Vimeo site](https://vimeo.com/457600740).
+
 ### Setup
 
-You'll need to sign up. It's free for what we're doing. You'll need a Google/Gmail account.
+You'll need to be logged into your J-School account or any Google/Gmail account.
 
-- Click "Sign up for Free"
-- Log in with Google (Dialogflow is a Google product).
+- Go to [Dialogflow](https://dialogflow.cloud.google.com)
 - Choose "Create Agent" -- and you may need to authenticate with Google again here.
 - Note that you can think of "Agents" as one bot brain. What you teach one agent isn't (easily) shared with another agent.
-- Name it "MyAgent" (no spaces allowed)
-- Leave the "Link to Google Project" line empty and hit OK
+- Name it "DogBot" (no spaces allowed)
+- Leave the rest of the page as it is.
 - Click "Save"
 
 OK, your "agent" is established.
@@ -563,9 +568,7 @@ OK, your "agent" is established.
 
 ### Building a dog bot
 
-<iframe src="https://player.vimeo.com/video/457600740" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-You can also see the video [on the Vimeo site](https://vimeo.com/457600740)
+Elaboration for all of these steps is in this week's [walk-through video](https://vimeo.com/457600740).
 
 - Establish the welcome intent.
     - "Hello! I'm here to help NYC dogs and their owners. You can play the pet quiz, find a dog run, or look up your dog's name. What would you like to do?"
@@ -591,7 +594,6 @@ _If you get stuck_ try backing up and following my steps again. If you still can
 
 1. Go to the `#design-development` channel and provide a short description of what's not working and what you've already tried. 
 2. Join my "helpdesk hours" Wednesday at 12:30 pm. The link for that has been added to the syllabus and will be posted in the `#design-development` chat every Wednesday morning.
-
 
 <a name="class5"></a>
 <a name="class6"></a>
