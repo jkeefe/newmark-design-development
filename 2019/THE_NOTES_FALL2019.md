@@ -236,7 +236,7 @@ I've stored exactly that code above as `views/text-back.html` in my Glitch app.
 
 We send that back to Twilio in our Glitch app just like we did with the `fact-page.html`
 
-## Let's get more sophiticated
+## Let's get more sophisticated
 
 Remember ... `request.body` is all of our text data ... and `request.body.Body` is the message itself. So we can use that in our code.
 

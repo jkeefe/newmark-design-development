@@ -398,6 +398,194 @@ _If you get stuck_ try backing up and following my steps again. If you still can
 2. Join my "helpdesk hours" Wednesday at 12:30 pm. The link for that has been added to the syllabus and will be posted in the `#design-development` chat every Wednesday morning.
 
 <a name="class4"></a>
+
+# Class 4 • Introduction to conversational interfaces
+
+Automatically processing what someone is saying -- either in a chat, to a voice assistant, or in an email -- is increasingly possible thanks to machine learning. We'll play with one of these natural language processing tools (such as Dialogflow) to get a handle on how to make it work for you.
+
+## Utterances
+
+These are things humans might say or type to a bot. 
+
+- How much is a plane ticket to Miami?
+- Where's the nearest dog park?
+- What's the weather going to be like tomorrow?
+- Yes, I agree.
+- Nope.
+- I'm in New York.
+- Wow!
+
+When building a bot, you need to have a _sense_ of what kinds of things your users might ask — so it helps to declare up front what kinds of things it can answer!
+
+_Hi! I'm the Newmark Bark Bot and I can answer questions about dogs and dog ownership in New York City_.
+
+Utterances are used to train the bot, and in Dialogflow these called "Training Phrases."
+
+## Intents
+
+Intents are categories of questions we can answer, and usually track with some basic function the human is asking the bot to do. Many utterances can lead to the same intent:
+
+- How much is a plane ticket to Miami?
+- What does it cost to fly from New York to London?
+- What's the price of a plane trip from Chicago to Los Angeles?
+
+What's the intent here? We might say it's `air-travel-price`.
+
+But intents can be simpler than that, too. 
+
+- Yes!
+- Yup.
+- You bet!
+- Si.
+- Of course
+
+... all mean "yes" to the bot. So we could group these into an intent called `response-yes`.
+
+And these:
+
+- No way
+- Nope
+- nada
+- no
+- Heck no
+
+... all mean "no" to the bot. So we could group these into an intent called `response-no`.
+
+And for our exclamations,
+
+- Wow
+- OMG
+- whoa!
+- I can't believe it!
+- Amazing
+
+And words like these could mean the `response-wow` intent.
+
+So you could make bot responses to those _intents_ instead of those words, and let the Natural Language Processor decide which intent is, um, intended.
+
+## Entities
+
+Consider our `air-travel-price` intent from above:
+
+- How much is a plane ticket to Miami?
+- What does it cost to fly from New York to London?
+- What's the price of a plane trip from Chicago to Los Angeles?
+
+While the _intent_ may be the same ("tell me the price of a plane trip"), the answers are definitely not going to be the same, right?
+
+In order to formulate an answer, we'd need some information:
+
+- Where are you flying from?
+- Where are you flying to?
+- When?
+- What airline?
+- What class of seat?
+
+The portions of the intent you need to answer a specific question are called "entities" (and also "slots" and "elements" and probably many other things, sorry!) 
+
+Entities here would include "Miami," "New York," "Chicago," and really any moderately sized city. They'd also include "Delta," "American," "JetBlue," and really any airline. Also "September 18, 2020" and "8 pm" and any other date/time combination. These are all "Entities."
+
+### Another example
+
+Consider the following phrases:
+
+- What's the forecast in Minneapolis tomorrow?
+- Will it rain in New York Friday?
+- What's the temperature outside?
+- Do I need an umbrella?
+
+You might call this a `get-forecast` intent. To answer a "forecast" intent, you need two additional pieces of information: Where and when. Entities!
+
+So a `get-forcast` intent requires `place` and `time`.
+
+- What's the forecast in Minneapolis tomorrow?
+    Intent: `weather-forecast`
+    Entity Place: `minneapolis`
+    Entity Time: `tomorrow`
+    
+- Will it rain in New York Friday?
+    Intent: `weather-precipitation`
+    Entity Place: `new york`
+    Entity Time: `friday`
+
+- What's the temperature outside?
+    Intent: ?
+    Entity Place: ?
+    Entity Time: ?
+
+- Do I need an umbrella?
+    Intent: ?
+    Entity Place: ?
+    Entity Time: ?
+    
+We can set up our bot so that if the entity is missing, the bot asks for it. 
+
+## Contexts
+
+Context is information about where we are (or, more often, where we just were) in the conversation. Context becomes important when the same response has different meanings in different parts of the conversation.
+
+For example, "yes" means something different if the question is "Do you like cats?" instead of "Do you like dogs?"
+
+I like to think of "Contexts" as breadcrumbs we can leave along the way to keep track of the conversation.
+
+## Training
+
+To train a bot — really a machine-learning _model_ — we do the following:
+
+1. Set up an intent.
+
+2. Come up with as many training phrases as possible to trigger that intent. The more the better! Usually you'll want at least 10.
+
+3. Write a response to that intent, which could be another question.
+
+Interestingly, most natural language systems allow you to review its decisions and _train_ it when it performed well and performed poorly.
+
+
+## Introduction to Dialogflow
+
+There are lots of tools out there to use to make bots. We'll play with [Dialogflow](https://dialogflow.cloud.google.com).
+
+### Setup
+
+You'll need to sign up. It's free for what we're doing. You'll need a Google/Gmail account.
+
+- Click "Sign up for Free"
+- Log in with Google (Dialogflow is a Google product).
+- Choose "Create Agent" -- and you may need to authenticate with Google again here.
+- Note that you can think of "Agents" as one bot brain. What you teach one agent isn't (easily) shared with another agent.
+- Name it "MyAgent" (no spaces allowed)
+- Leave the "Link to Google Project" line empty and hit OK
+- Click "Save"
+
+OK, your "agent" is established.
+
+- If you don't see a sidebar on the left side, click the menu icon (the three horizontal lines)
+
+### Building a dog bot
+
+- Establish the welcome intent.
+    - "Hello! I'm here to help NYC dogs and their owners. You can play the pet quiz, find a dog run, or look up your dog's name. What would you like to do?"
+- Build the each intent.
+    - Come up with 5 phrases
+    - Include a response text
+- Test them out
+- What happens if you say something wrong?
+    - That's the "Fallback intent" ... let's fix that.
+- Build the Pet Quiz
+- Go to integrations
+- Make a web bot
+- Fill out the assignment form, including that URL
+
+## Assignment
+
+_Check out Google Classroom for the "04 Assignment." You'll need the URL from the end of the video.  Do it now ... it's due on at high noon on the day of our next class._
+
+_If you get stuck_ try backing up and following my steps again. If you still can't get it to work, you have options:
+
+1. Go to the `#design-development` channel and provide a short description of what's not working and what you've already tried. 
+2. Join my "helpdesk hours" Wednesday at 12:30 pm. The link for that has been added to the syllabus and will be posted in the `#design-development` chat every Wednesday morning.
+
+
 <a name="class5"></a>
 <a name="class6"></a>
 <a name="class7"></a>
