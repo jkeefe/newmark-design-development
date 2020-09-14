@@ -563,17 +563,24 @@ OK, your "agent" is established.
 
 ### Building a dog bot
 
+<iframe src="https://player.vimeo.com/video/457600740" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+You can also see the video [on the Vimeo site](https://vimeo.com/457600740)
+
 - Establish the welcome intent.
     - "Hello! I'm here to help NYC dogs and their owners. You can play the pet quiz, find a dog run, or look up your dog's name. What would you like to do?"
 - Build the each intent.
     - Come up with 5 phrases
     - Include a response text
-- Test them out
+    - Test them out
+- Build the Pet Quiz
 - What happens if you say something wrong?
     - That's the "Fallback intent" ... let's fix that.
-- Build the Pet Quiz
-- Go to integrations
-- Make a web bot
+- Share it with the world (and your instructor):
+    - Go to integrations
+    - Flip the switch on "Web demo"
+    - Copy the link to the bot
+    - NOTE! I forgot to mention this, but you can also get an EMBED code here to put the bot on your own site.
 - Fill out the assignment form, including that URL
 
 ## Assignment
