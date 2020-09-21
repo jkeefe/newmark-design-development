@@ -391,7 +391,7 @@ Consider the intents for the following phrases:
 
 To answer a "forecast" intent, you need two additional pieces of information: Where and when. 
 
-These are called "entities" (and also slots and elements and probably many other things).
+These are called "entities" (and also "slots" and "elements" and probably many other things).
 
 So a `weather-forcast` intent requires `place` and `time`.
 
