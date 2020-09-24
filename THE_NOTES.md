@@ -599,12 +599,12 @@ _If you get stuck_ try backing up and following my steps again. If you still can
 
 ## Class 5 • Talk to me: Making a voice service for Google Home
 
-## Providing data background
-
 ## Let's make it!
 
 ### Video walk-through
 
+<iframe src="https://player.vimeo.com/video/461499760?title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/461499760">Design &amp; Development: Class 5 Walk-through</a> from <a href="https://vimeo.com/jkeefe">John Keefe</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 #### Update our Glitch app to get ready for requests from Dialogflow
 
@@ -650,9 +650,10 @@ app.post('/dialogflow', function(request, response){
 
 - Log into Dialogflow
 - First we're going to let Dialogflow that we're going to use a "Fulfillment" service (our Glitch site!) to help answer questions. Click on the "Fulfillment" tab.
-- Need to go get the URL from Glitch. It'll be in this format: `https://[your-project-name].glitch.me/dialogflow`
-- Back in Dialogflow, paste that into the "URL" line (don't forget the `/dialogflow` at the end!)
-- Flip the "Enabled" switch at the top so it's blue.
+- Here, flip the webhook switch from "Disabled" to "Enabled" at the top so it's blue.
+- We need to provide our dog service's URL. It'll be in this format: `https://[your-project-name].glitch.me/dialogflow`
+- Put that into the Dialogflow webhook "URL" line (don't forget the `/dialogflow` at the end!)
+
 
 #### Set up the conversation
 
