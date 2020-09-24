@@ -620,7 +620,7 @@ app.post('/dialogflow', function(request, response){
   
   var search_dog = request.body.queryResult.queryText
   
-  db.all('SELECT dog_name, count(dog_name) AS total FROM doginfo WHERE dog_name LIKE "' + search_dog + '" GROUP BY dog_name COLLATE NOCASE', function(err, rows) {
+  db.all('SELECT dog_name, count(dog_name) AS total FROM dogs WHERE dog_name LIKE "' + search_dog + '" GROUP BY dog_name COLLATE NOCASE', function(err, rows) {
     
     if (err) {
       console.log(err)
