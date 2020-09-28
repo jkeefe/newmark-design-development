@@ -683,6 +683,131 @@ app.post('/dialogflow', function(request, response){
 - Fun!
 
 <a name="class6"></a>
+
+## Class 6 • Getting & giving insights with forms
+
+## Airtable "Base"
+
+- Head over to [airtable.com](https://airtable.com).
+- Start a new "base"
+- Then make a few entries
+- Delete any blank entries
+
+### Check out its custom API
+
+- Then head over to the api section at [api.airtable.com](https://airtable.com/api)
+- Pick the same "base."
+- Click "show api key" at the top right
+- Then copy the url (not the `curl` part) from under "Example Using Query Parameter"
+- Open a new tab in your browser and paste that in
+
+### Get your API key
+
+- Open a new tab and go to https://airtable.com/account
+- Generate an API key
+- Copy it
+
+### Use it for Glitch
+
+- Open new tab and go to https://glitch.com 
+- Open view the code for your "bark" project
+- Go to the `.env` file
+- Paste the API key in the box where it goes
+
+### Build a "dog news" page
+
+- In Glitch make a new file in the `views` folder
+- Name it `news.html`
+- Paste Block 7 into this file
+
+**Block 7**
+
+```html
+<html lang="en">
+  
+  <head>
+    <title>Newmark Bark</title>
+    <meta name="description" content="latest news">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">  
+  </head>
+  
+  <body>
+    <h1>
+      Newmark Bark • Latest News
+    </h1>
+
+    <!-- This block will loop through all the "stories" in the data we feed it -->
+    {{#stories}}
+      <h2>{{Name}}</h2>
+      <div>{{Notes}}</div>
+    {{/stories}}
+    
+  </body>
+  
+</html>
+```
+
+- Back on the Airtable API tab, click "JavaScript" at the top.
+- Add this code to the top of the project, copied from the Airtable api documentation _not from these notes!_. (Your code will be slightly different, because your "base" has a different ID.) It'll look like this:
+
+```javascript
+// This is just an example! Use the code for YOUR base, which is in Airtable
+const base = require('airtable').base('appuKFpVClZjDsvUm');
+```
+
+- Switch to the to the `server.js` file
+- Open a little space just above the line that says `// listen for requests`
+- We're going to add a new "route" called `/news`. Copy and paste Block 8 into this spot:
+
+**Block 8**
+
+```JavaScript
+app.get('/news', function(req, resp) {
+  
+  // let's set up the data with a spot for stories
+  var data = {'stories':[]}
+  
+  // NOTE! If your page isn't updating, try increasing
+  // this number by one. Just changing it makes the
+  // news.html page refresh
+  data.cachebust = 2
+  
+  // go hit out Airtable!
+  base('Table 1').select({
+    view: 'Grid view'
+  }).firstPage(function(err, records) {
+    
+      // log an error if something breaks
+      if (err) { console.error(err); return; }
+    
+      // loop through the items and 
+      // add them to "data" (using Airtable's code)
+      records.forEach(function(record) {
+          data.stories.push({
+            "Name": record.get('Name'),
+            "Notes": record.get('Notes')
+          })
+        
+      })
+    
+      console.log(data)
+    
+      // pass the data to the html template and serve up the page
+      resp.render('news.html', data)
+    
+  })
+  
+})
+```
+
+- View your news at your projet url `/news`
+- Paste that URL into the homework!
+
 <a name="class7"></a>
 <a name="class8"></a>
 <a name="class9"></a>
