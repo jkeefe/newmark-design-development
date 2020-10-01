@@ -690,11 +690,12 @@ app.post('/dialogflow', function(request, response){
 - Making a form in Typeform
 - Making a form in Airtable
 
-## Walk-through video
+### Walk-through video
 
-[TK]
+<iframe src="https://player.vimeo.com/video/464007934?title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/464007934">Design &amp; Development 06 Walk-through</a> from <a href="https://vimeo.com/jkeefe">John Keefe</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-## Airtable "Base"
+### Airtable "Base"
 
 - Head over to [airtable.com](https://airtable.com).
 - Start a new "base"
