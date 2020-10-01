@@ -686,6 +686,14 @@ app.post('/dialogflow', function(request, response){
 
 ## Class 6 • Getting & giving insights with forms
 
+- Making a form in Google Forms
+- Making a form in Typeform
+- Making a form in Airtable
+
+## Walk-through video
+
+[TK]
+
 ## Airtable "Base"
 
 - Head over to [airtable.com](https://airtable.com).
@@ -713,6 +721,19 @@ app.post('/dialogflow', function(request, response){
 - Open view the code for your "bark" project
 - Go to the `.env` file
 - Paste the API key in the box where it goes
+
+### Get the identity of your base
+
+- Back on the Airtable API tab, click "JavaScript" at the top.
+- Find the line that looks like this:
+
+```javascript
+const base = require('airtable').base('appuKFpVClZjDsvUm');
+```
+- Copy it (but not mine here in these notes ... copy it from _your_ Airtable)
+- Go back to Glitch, and pick the `server.js` file
+- Paste that line of code in `server.js` right above the line that says `/// URL ROUTES BELOW ...`
+
 
 ### Build a "dog news" page
 
@@ -752,15 +773,7 @@ app.post('/dialogflow', function(request, response){
 </html>
 ```
 
-- Back on the Airtable API tab, click "JavaScript" at the top.
-- Add this code to the top of the project, copied from the Airtable api documentation _not from these notes!_. (Your code will be slightly different, because your "base" has a different ID.) It'll look like this:
-
-```javascript
-// This is just an example! Use the code for YOUR base, which is in Airtable
-const base = require('airtable').base('appuKFpVClZjDsvUm');
-```
-
-- Switch to the to the `server.js` file
+-
 - Open a little space just above the line that says `// listen for requests`
 - We're going to add a new "route" called `/news`. Copy and paste Block 8 into this spot:
 
