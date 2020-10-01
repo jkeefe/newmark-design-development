@@ -730,7 +730,7 @@ app.post('/dialogflow', function(request, response){
 $ export AIRTABLE_API_KEY=keyVblahBLAHblah
 ```
 
-- Copy all of the letters to the right of the equals sign `-` (including the lower-case "key" at the beginning of those letters)
+- Copy all of the letters to the right of the equals sign `=` (including the lower-case "key" at the beginning of those letters)
 - Now open new tab and go to https://glitch.com 
 - Open view your "bark" project
 - Go to the `.env` file
