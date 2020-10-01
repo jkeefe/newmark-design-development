@@ -743,37 +743,8 @@ const base = require('airtable').base('appuKFpVClZjDsvUm');
 
 **Block 7**
 
-```html
-<html lang="en">
-  
-  <head>
-    <title>Newmark Bark</title>
-    <meta name="description" content="latest news">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+[View Block 7 code here](https://gist.github.com/jkeefe/220a57606bb6ebd9b75d4e4f65679bad).
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">  
-  </head>
-  
-  <body>
-    <h1>
-      Newmark Bark • Latest News
-    </h1>
-
-    <!-- This block will loop through all the "stories" in the data we feed it -->
-    \{\{#stories\}\}
-      <h2>{{Name}}</h2>
-      <div>{{Notes}}</div>
-    {{/stories}}
-    
-  </body>
-  
-</html>
-```
-
--
 - Open a little space just above the line that says `// listen for requests`
 - We're going to add a new "route" called `/news`. Copy and paste Block 8 into this spot:
 
