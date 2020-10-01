@@ -763,7 +763,7 @@ const base = require('airtable').base('appuKFpVClZjDsvUm');
     </h1>
 
     <!-- This block will loop through all the "stories" in the data we feed it -->
-    {{#stories}}
+    \{\{#stories\}\}
       <h2>{{Name}}</h2>
       <div>{{Notes}}</div>
     {{/stories}}
