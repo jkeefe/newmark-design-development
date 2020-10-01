@@ -705,27 +705,40 @@ app.post('/dialogflow', function(request, response){
 ### Check out its custom API
 
 - Then head over to the api section at [api.airtable.com](https://airtable.com/api)
-- Pick the same "base."
-- Click "show api key" at the top right
-- Then copy the url (not the `curl` part) from under "Example Using Query Parameter"
-- Open a new tab in your browser and paste that in
+- Pick the same "base" you made in the last step. This will get you to the API info for that base.
 
 ### Get your API key
 
-- Open a new tab and go to https://airtable.com/account
-- Generate an API key
-- Copy it
+- We need to establish an API key that is your secret code to accessing your API.
+- Scroll down to the "Authentication" section section and click on the word "account" where the text says "visit your account page." (You can also just go to https://airtable.com/account)
+- Generate an API key on this page.
 
-### Use it for Glitch
+### See it in action
 
-- Open new tab and go to https://glitch.com 
-- Open view the code for your "bark" project
+- Head back to the "Airtable API" page (the one with the light and dark columns)
+- Click "show api key" at the top right
+- Then copy the url (not the `curl` part) from under "Example Using Query Parameter"
+- Open a new tab in your browser and paste that in to see your story data on the internet.
+
+### Put your API key in Glitch
+
+- Again, head back to the "Airtable API" page (the one with the light and dark columns)
+- Back on the Airtable API tab, click "JavaScript" at the top of the darker column. This will switch the code in that column to JavaScript, which is what we need.
+- Look for the line that looks like this: 
+
+```
+$ export AIRTABLE_API_KEY=keyVblahBLAHblah
+```
+
+- Copy all of the letters to the right of the equals sign `-` (including the lower-case "key" at the beginning of those letters)
+- Now open new tab and go to https://glitch.com 
+- Open view your "bark" project
 - Go to the `.env` file
 - Paste the API key in the box where it goes
 
 ### Get the identity of your base
 
-- Back on the Airtable API tab, click "JavaScript" at the top.
+- Go back to the Airtable API tab
 - Find the line that looks like this:
 
 ```javascript
