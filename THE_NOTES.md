@@ -748,7 +748,6 @@ const base = require('airtable').base('appuKFpVClZjDsvUm');
 - Go back to Glitch, and pick the `server.js` file
 - Paste that line of code in `server.js` right above the line that says `/// URL ROUTES BELOW ...`
 
-
 ### Build a "dog news" page
 
 - In Glitch make a new file in the `views` folder
@@ -807,6 +806,26 @@ app.get('/news', function(req, resp) {
 - Paste that URL into the homework!
 
 <a name="class7"></a>
+
+## Class 7 • Chatbots for collecting information in real time
+
+**Block 9**
+
+```javascript
+base('Table 2').create([
+  {
+    "fields": {
+      "Name": search_dog
+    }
+  }
+], function(err, records) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+});
+```
+
 <a name="class8"></a>
 <a name="class9"></a>
 <a name="class10"></a>
