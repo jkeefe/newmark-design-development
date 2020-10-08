@@ -809,6 +809,13 @@ app.get('/news', function(req, resp) {
 
 ## Class 7 • Chatbots for collecting information in real time
 
+## Video walk-through
+
+<iframe src="https://player.vimeo.com/video/466304040?title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/466304040">Design &amp; Development Walkthrough: Class 7</a> from <a href="https://vimeo.com/jkeefe">John Keefe</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+## Code you'll need
+
 **Block 9**
 
 ```javascript
@@ -825,6 +832,11 @@ base('Table 2').create([
   }
 });
 ```
+
+## Assignment
+
+Complete the video tasks and paste your Glitch project url in the assignment form.
+
 
 <a name="class8"></a>
 <a name="class9"></a>
