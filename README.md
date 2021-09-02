@@ -89,7 +89,7 @@ Let's bring what we've learned so far into your community project. We'll outline
 
 ## Class 9 • Make bots to do your bidding
 
-- Every time Donald Trump tweets, put it in a spreadsheet
+- Every time a famous person tweets, put it in a spreadsheet
 - Every time it's at or below 32 degrees send a tweet
 - Whenever someone posts on their blog, get an email
 - Whenever papers are filed in a court case, get an email 
