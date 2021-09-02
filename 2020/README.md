@@ -4,7 +4,7 @@
 
 Come explore what's next in news delivery and audience engagement, and prototype your ideas. Throughout the industry, we see that the ability to build journalistic products is key, not just in startups from Vox to Quartz but also in big media companies of all sorts, from The New York Times to CNN to WNYC to a metro newspaper. This class will help you imagine and prototype new products and services -- and in the process reimagine journalism itself and how it connects with and serves the public.
 
-We'll experiment with telling news stories through channels such as texting, intelligent agents like Google Home and even household objects. You will learn essential skills to develop, grow, test and retry how you use information in a two-way exchange with your community.
+We'll experiment with telling news stories through channels such as instant messaging, watches, intelligent agents like Google Home and even household objects. You will learn essential skills to develop, grow, test and retry how you use information in a two-way exchange with your community.
 
 You'll also learn how to sketch out your technical hopes and dreams so that others might help you code and build it, too.
 
@@ -32,7 +32,7 @@ Additionally, I want to make sure you can enhance your project through:
 
 # The Syllabus
 
-Here's the rundown of what we'll cover in our weeks together. Note that the full syllabus, with grading and other details, is in a [Google Doc available to students](https://docs.google.com/document/d/1edN0UgS0uUteCULdG_usbwbHStUsS0Z2m90u-6xyxwU/edit).
+Here's the rundown of what we'll cover in our weeks together. Note that the full syllabus, with grading and other details, is in a [Google Doc available to students](https://docs.google.com/document/d/18NGVFxtoaJ3dAtNInjoG1b5Hb6TmSgkl7DBBbeBVTvk/edit).
 
 ## Class 1 • Basic internetting
 
@@ -130,12 +130,6 @@ Let's talk about security. We'll get into how you can start practicing better pe
 
 We'll talk about how to communicate with developers, assess the project as it progresses, adjust to blockers, and reach a successful state.
 
-
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class14">Notes for this class</a>.
-
-## "Class 15" • Consulting for your own project
-
-Whether it's for your Engagement Journalism final project or something you're thinking about building separately, we'll set aside time to discuss it. Be sure to sign up when the opportunity arises midway through the semester. This counts toward your class participation, too.
-
 
 
