@@ -220,20 +220,20 @@ The format is generally:
 
 ### Break!
 
-### Load the database into Glitch
+### Load the database into your Glitch project
 
-- In your bark project, go to the Glitch terminal
+1. In your bark project, go to the Glitch terminal
     - Tools > Terminal
-- Change directory into the `.data` directory by typing `cd .data`
-- To get the CSV, type this `wget "http://s3.amazonaws.com/media.johnkeefe.net/data/NYC_Dog_Licensing_Dataset_2018.csv
-"`
-- To start the database, type `sqlite3 my.db`
-- To switch into CSV mode type `.mode csv`
-- To import the CSV into our database, type `.import NYC_Dog_Licensing_Dataset_2018.csv nyc_dog_licenses`
-- Note that ^ that line created the "nyc_dog_licenses" table within your database
-- Check out if everything worked by typing: `.schema nyc_dog_licenses`
-- Switch out of csv mode: `.mode column`
-- Try `SELECT count() FROM nyc_dog_licenses WHERE AnimalName LIKE "bella";`
+1. Type: `cd .data` to **c**hange **d**irectory to the `.data` directory
+1. Copy-paste this and hit return:
+```
+wget "http://s3.amazonaws.com/media.johnkeefe.net/data/NYC_Dog_Licensing_Dataset_2018.csv"
+sqlite3 my.db '.mode csv' '.import NYC_Dog_Licensing_Dataset_2018.csv nyc_dog_licenses'
+```
+1. Type: `sqlite3 my.db` to start the database
+1. Type:  `SELECT count() FROM nyc_dog_licenses;` to test it!
+1. Type: `.exit` to exit
+1. Close the Terminal
 
 ### Dynamic with a database
 
@@ -247,31 +247,24 @@ We'll talk about adding this code in class:
 **Block one**
 
 ```javascript
-app.get('/first10', function(request, response) {
-  db.all('SELECT * FROM nyc_dog_licenses LIMIT 10', function(err, rows) {
+// watch for "first10" in the URL
+app.get('/first10', (request, response) => {
     
-    if (err) {
-      console.log(err)
-    }
+    // set the query
+    let query = 'SELECT * FROM nyc_dog_licenses LIMIT 10'
+  
+    // run the query
+    db.all(query, (err, rows) => {
     
-    response.send(JSON.stringify(rows))
+        // let us know if something went wrong
+        if (err) {
+          console.log(err)
+        }
+    
+        // otherwise, send a "response" with a JSON version of the rows we got
+        response.send(JSON.stringify(rows))
   })
-})
-```
-
-**Block two**
-
-```javascript
-app.get('/topnames', function(request,response) {
-  db.all('SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName) DESC LIMIT 10', function(err, rows) {
-    
-    if (err) {
-      console.log(err)
-    }
-    
-    response.send(JSON.stringify(rows))
-    
-  })
+  
 })
 ```
 
@@ -280,12 +273,40 @@ app.get('/topnames', function(request,response) {
 - A little bit about JSON
 - To make your life easier, download JSONview plug in
 
+
+**Block two**
+
+```javascript
+// watch for "toppnames" in the URL
+app.get('/topnames', (request,response) => {
+    
+    // set the query
+    let query = 'SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName) DESC LIMIT 10'
+  
+    // let us know if something went wrong
+    db.all(query, (err, rows) => {
+
+        // let us know if something went wrong
+        if (err) {
+          console.log(err)
+        }
+
+        // otherwise, send a "response" with a JSON version of the rows we got
+        response.send(JSON.stringify(rows))
+
+    })
+})
+```
+
 ## Assignment
 
 _This is the "Class 2" assignment. Do it now ... it's due on at high noon before Class 3._
 
-Add a new "route" to your web service called "topbreeds" that, when hit by a web browser, returns a list of the top 5 dog breeds (by count) in the database. Submit that link in the form here.
+Add a new "route" to your web service called "topbreeds" that, when hit by a web browser, returns a list of the top 5 dog breeds (by count) in the database. Submit that "topbreeds" live link in the Google Classroom assignment form. 
 
+That link will look like `https://https://newmark-bark.glitch.me/topbreeds` ... but with your name instead of `newmark`.
+
+Remember that your can find your base "live link" by clicking the "Share" button. 
 
 <a name="class3"></a>
 <a name="class4"></a>
