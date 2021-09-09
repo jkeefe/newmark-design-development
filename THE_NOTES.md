@@ -113,19 +113,21 @@ What we did last week:
 1. **Request:** You -> https://curious-scout.glitch.me -> Glitch
 2. **Response:**  Glitch -> `index.html` -> you
 
-### Server-driven
+### "Dynamic"
 
- Instead of Glitch just serving up your fixed or *static* html page (as in Class 1) you're using a "server" file that serves up the page.
+1. **Request:**  You -> https://newmark-bark.glitch.me -> Glitch
+2. **Response:**  Glitch -> `server.js` -> `index.html` -> you
+
+Instead of Glitch just serving up your fixed or *static* html page (as in Class 1) you're using a "server" file that serves up the page.
  
  - Search for `jkeefe` or go to [https://glitch.com/@jkeefe](https://glitch.com/@jkeefe)
  - Find `newmark-bark`
  - Remix it!
  - Name it `[yourname]-bark`
 
-Let's take a look around ...
+Let's take a look around ... 
 
-1. **Request:**  You -> https://newmark-bark.glitch.me -> Glitch
-2. **Response:**  Glitch -> `server.js` -> `index.html` -> you
+See how the main page, `index.html`, is served.
 
 We can also make a new "about" page by adding a new _view_ page and a new _route_.
 
@@ -155,8 +157,9 @@ Here's the view page, which we'll call `views/about.html`:
 
 Here's the route, which goes in the `server.js` file under the line that says put the routes under this line!
 
-```html
+```js
 // this is the "home" page or the regular url
+
 app.get('/about', function(request, response) {
   response.sendFile(__dirname + '/views/about.html');
 });
@@ -166,13 +169,21 @@ app.get('/about', function(request, response) {
 
 ```html
 <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css">
 ```
 
-### Dynamic
+### Why all the hassle?
+
+Here's why ... with a "dynamic" page, we can alter the page before sending it back to the user.
+
+For example, try visiting: https://newmark-bark.glitch.me/random (note the "random" at the end!)
 
 1. **Request:**  You -> https://newmark-bark.glitch.me/random -> Glitch
 2. **Response:**  Glitch -> `server.js` -> get data -> inject data -> `fact-page.html` -> you
+
+We can _inject_ the page with data before serving it up.
+
+But what if you have more than 6 rows of data?
 
 ## Databases!
 
@@ -210,13 +221,14 @@ The format is generally:
 #### GROUP BY & ORDER BY
 
 - Try `SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName;`
+- Try `SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName);`
 - Try `SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName) DESC;`
 - Try `SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName) DESC LIMIT 10;`
-- Try `SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName) ;`
+
 
 #### AS
 
-- Try `SELECT AnimalName, count(AnimalName) AS TotalDogs FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY TotalDogs ;`
+- Try `SELECT AnimalName, count(AnimalName) AS TotalDogs FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY TotalDogs DESC;`
 
 ### Break!
 
@@ -232,15 +244,23 @@ sqlite3 my.db '.mode csv' '.import NYC_Dog_Licensing_Dataset_2018.csv nyc_dog_li
 ```
 1. Type: `sqlite3 my.db` to start the database
 1. Type:  `SELECT count() FROM nyc_dog_licenses;` to test it!
+1. Can even do: `SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName) DESC LIMIT 10;`
 1. Type: `.exit` to exit
-1. Close the Terminal
+1. Close the Terminal with the "X" at the right
 
 ### Dynamic with a database
 
 1. **Request:**  You -> https://newmark-bark.glitch.me/first10 -> Glitch
 2. **Response:**  Glitch -> `server.js` -> query a database -> get the answer -> turn into JSON -> you
 
-First step, go to the `server.js` file and uncomment the SQLite code.
+#### Let'a make it!
+
+First ...
+- In Glitch go to the `server.js` file 
+- Uncomment the SQLite code.
+    - That means delete the `//` from the beginning of the lines
+    - (But not all of those on the first one, which is just a label)
+    - A shortcut: highlight the lines and press `[command] /``
 
 We'll talk about adding this code in class:
 
@@ -281,7 +301,7 @@ app.get('/first10', (request, response) => {
 app.get('/topnames', (request,response) => {
     
     // set the query
-    let query = 'SELECT AnimalName, count(AnimalName) FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY count(AnimalName) DESC LIMIT 10'
+    let query = 'SELECT AnimalName, count(AnimalName) as TotalDogs FROM nyc_dog_licenses GROUP BY AnimalName ORDER BY TotalDogs DESC LIMIT 10'
   
     // let us know if something went wrong
     db.all(query, (err, rows) => {
@@ -302,9 +322,9 @@ app.get('/topnames', (request,response) => {
 
 _This is the "Class 2" assignment. Do it now ... it's due on at high noon before Class 3._
 
-Add a new "route" to your web service called "topbreeds" that, when hit by a web browser, returns a list of the top 5 dog breeds (by count) in the database. Submit that "topbreeds" live link in the Google Classroom assignment form. 
+Add a new "route" to your web service called "topbreeds" that, when hit by a web browser, returns a list of the top FIVE dog breeds (by count) in the database.
 
-That link will look like `https://https://newmark-bark.glitch.me/topbreeds` ... but with your name instead of `newmark`.
+Submit that "topbreeds" live link in the Google Classroom assignment form. That link will look like `https://https://newmark-bark.glitch.me/topbreeds` ... but with your name instead of `newmark`.
 
 Remember that your can find your base "live link" by clicking the "Share" button. 
 
