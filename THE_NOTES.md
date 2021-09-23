@@ -343,14 +343,13 @@ Remember that your can find your base "live link" by clicking the "Share" button
 
 We've been making what's known as an **API**. Officially, API stand for Application Program Interface. But I like to think of it as Another Person's Information. It's a way to get information from data on the web ... even though you usually don't actually _see_ it. It's often happening in the background.
 
+- [The Weather](https://www.weather.gov/) | Weather.gov
 - [How to vote in your state](https://www.washingtonpost.com/elections/2020/how-to-vote/) | Washington Post
 - [Nursing home inspect](https://projects.propublica.org/nursing-homes/) | ProPublica
 - [The NYPD files](https://projects.propublica.org/nypd-ccrb/) | ProPublica
 - [Tracking Covid at US Colleges](https://www.nytimes.com/interactive/2020/us/covid-college-cases-tracker.html) | New York Times
-- [The Weather](https://www.weather.gov/) | Weather.gov
-- [Pollen Counts](https://www.aaaai.org/global/nab-pollen-counts) | AAAAI
 
-Let's make an API specifically for providing data on how many dogs are named ... whatever name we're asked ... and then make it easy to use.
+Let's make an a service specifically for providing data on how many dogs are named ... whatever name we're asked ... and then make it easy to use.
 
 - It will [look like this](https://newmark-bark.glitch.me/form) when it's done!
 
@@ -477,7 +476,7 @@ app.get('/form', function(request, response) {
 
 _This is the "Class 03" assignment. Do it now ... it's due on at high noon before Class 04._
 
-Complete the steps above so that your form _works_ and answers the question for any name I enter. Paste the _Show_ URL into the form below and submit it by the deadline. The URL should be like `my-bark-site.glitch.me/form`.
+Complete the steps above so that your form _works_ and answers the question for any name I enter. Paste the _Show_ URL into the form below and submit it by the deadline. The URL should be like `name-bark.glitch.me/form`.
 
 _If you get stuck_ try backing up and following my steps again. If you still can't get it to work, you have options:
 
