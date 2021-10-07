@@ -682,9 +682,108 @@ _If you get stuck_ try backing up and following my steps again. If you still can
 1. Go to the `#design-development` channel and provide a short description of what's not working and what you've already tried. 
 2. Join my "helpdesk hours" Wednesday at 12:30 pm. The link for that has been added to the syllabus and will be posted in the `#design-development` chat every Wednesday morning.
 
-
-
 <a name="class5"></a>
+
+## Class 5 • Talk to me: Making a voice service for Google Home
+
+## Let's make it!
+
+### Video walk-through
+
+<iframe src="https://player.vimeo.com/video/461499760?title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/461499760">Design &amp; Development: Class 5 Walk-through</a> from <a href="https://vimeo.com/jkeefe">John Keefe</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+#### Update our Glitch app to get ready for requests from Dialogflow
+
+![Chart showing flow of messages from human, to dialogflow and to Glitch ... and then back again.](./images/message_flow.png)
+
+- Log into Glitch
+- We need to make a new route. It's like the "form," but it's specific to Dialogflow, so we can accept Dialogflow's request and make an answer. Here's the code:
+
+**Block 6**
+
+```javascript
+app.post('/dialogflow', function(request, response){
+  
+  var search_dog = request.body.queryResult.queryText
+  
+  db.all(`SELECT AnimalName, count(AnimalName) AS total FROM nyc_dog_licenses WHERE AnimalName LIKE "${search_dog}" GROUP BY AnimalName`, function(err, rows) {
+    
+    if (err) {
+      console.log(err)
+    }
+    
+    var total_dogs
+    
+    if (rows.length < 1) {
+      total_dogs = "no"
+    }  else {
+      total_dogs = rows[0].total
+    }
+    
+    var response_phrase = `There are ${total_dogs} dogs named ${search_dog} in New York City.`
+
+    var data ={
+      "fulfillmentText": response_phrase
+    }
+
+    response.send(JSON.stringify(data))
+    
+  })
+  
+})
+```
+#### Tell Dialogflow where to get the answers
+
+- Log into Dialogflow
+- First we're going to let Dialogflow that we're going to use a "Fulfillment" service (our Glitch site!) to help answer questions. Click on the "Fulfillment" tab.
+- Here, flip the webhook switch from "Disabled" to "Enabled" at the top so it's blue.
+- We need to provide our dog service's URL. It'll be in this format: `https://[your-project-name].glitch.me/dialogflow`
+- Put that into the Dialogflow webhook "URL" line (don't forget the `/dialogflow` at the end!)
+
+
+#### Set up the conversation
+
+- Go to the "DogNameLookup" intent 
+- Change the output text to "Excellent! What's your dog's name?"
+- Also need to add an Output Context! Let's call it `asked-for-name`
+- Need to make a new intent. But this is a **fallback intent**. That is, we're not trying to detect what they say from the language. We want the answer, no matter _what_ the human says. But we also don't want to go to the **default fallback intent** . That's why we set the output context. So if we're waiting for a response to `asked-for-name` we'll use this. There's a special place to make these intents.
+- Let's call it `CheckGlitchForName`
+- Add an "Input Context": `asked-for-name` (give it a duration of 1)
+- Open the "Fulfillment" section (in the main part of the window)
+- Turn on the switch for "Enable webhook call for this intent."
+- Give it a try in the test window.
+- Give it a try in the web chat
+- Once the DogNameLookup works on the web chat, submit this link (just like last week).
+
+#### Do it with your voice!
+
+**Note!** Your J-School Google account isn't authorized to do this part of the project. In order to try this yourself, you'll need to _share_ your bot with another Gmail account.
+
+To do that ...
+- click on the "gear" icon next to your Agent name (probably "DogBot")
+- click on "Share"
+- Under the section "Invite new people" add your personal Gmail address.
+- Change the type of person to "DEVELOPER"
+- Click "ADD"
+
+OK, now we're ready to continue. 
+
+- In a new browser, log into your _other_ Gmail address. 
+- Go to [dialogflow.cloud.google.com](dialogflow.cloud.google.com)
+- Get into your DogBot
+- Go to "Integrations"
+- Pick Google Assistant integration (don't pick the new offering ... just the "continue to the integration" link)
+- Click "TEST" at the bottom.
+- Wait for it to get set up "Actions on Google" (takes a full minute or so)
+- Allow location use
+- Click on the microphone
+- Allow microphone use
+- Say "Talk to my test app"
+- Answer the questions! (**You have to click the microphone before you say something**)
+- Fun!
+
+
 <a name="class6"></a>
 <a name="class7"></a>
 <a name="class8"></a>
