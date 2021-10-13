@@ -912,7 +912,7 @@ There's your spreadsheet in JSON format!
 
 [View Block 8 code here](https://gist.github.com/jkeefe/220a57606bb6ebd9b75d4e4f65679bad).
 
-### Make a route to the news page
+### Add the "request" library to our project
 
 First we have to add some software to our code. This is a pre-made "library" that allows your Glitch project to go get data from another web service.
 
@@ -930,6 +930,8 @@ const request = require('request');
 ```
 
 All set!
+
+### Make a route to the news page
 
 OK, now we need to make our route.
 
