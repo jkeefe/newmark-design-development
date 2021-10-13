@@ -783,8 +783,196 @@ OK, now we're ready to continue.
 - Answer the questions! (**You have to click the microphone before you say something**)
 - Fun!
 
-
 <a name="class6"></a>
+
+## Class 6 • Getting & giving insights with Google forms and sheets
+
+- Making a form in Google Forms
+    - `drive.google.com`
+    - Click "New +"
+    - Pick "Google Forms"
+    
+We'll explore how to collect and see the data in Google Sheets.
+
+- Also Airtable
+- Also Typeform
+
+### Pulling data FROM a Google Sheet
+
+To continue in the walkthrough, you should have the following tabs open in your browser:
+
+1. These notes
+2. Your Glitch app
+3. A new, blank spreadsheet
+
+### Turning your spreadsheet into an API
+
+- Start a new Google Sheet (Tip: You can do that quickly by typing the URL `sheets.new` into a browser)
+- Title the first column `headline`
+- Title the second column `summary`
+- Add three headlines and three summaries
+    - Note: Anything you type will become public! So no secrets, please.
+
+OK, now we're going to add some magic ...
+
+- In the menu, choose `Tools > Script Editor`
+- This will open a new browser tab
+- Name the project `sheet2json`
+- Delete everything in the shaded box
+- Paste into the shaded area code Block 7:
+
+**Block 7**
+
+```javascript
+function doGet(e) {
+
+  var sheetName = "Sheet1";
+  var sheetId   = "YOUR_SHEET_ID";
+
+  var book = SpreadsheetApp.openById(sheetId);
+  var sheet = book.getSheetByName(sheetName);
+
+  var json = convertSheet2JsonText(sheet);
+
+  return ContentService
+          .createTextOutput(JSON.stringify(json))
+          .setMimeType(ContentService.MimeType.JSON);
+}
+
+function convertSheet2JsonText(sheet) {
+  // first line(title)
+  var colStartIndex = 1;
+  var rowNum = 1;
+  var firstRange = sheet.getRange(1, 1, 1, sheet.getLastColumn());
+  var firstRowValues = firstRange.getValues();
+  var titleColumns = firstRowValues[0];
+
+  // after the second line(data)
+  var lastRow = sheet.getLastRow();
+  var rowValues = [];
+  for(var rowIndex=2; rowIndex<=lastRow; rowIndex++) {
+    var colStartIndex = 1;
+    var rowNum = 1;
+    var range = sheet.getRange(rowIndex, colStartIndex, rowNum, sheet.getLastColumn());
+    var values = range.getValues();
+    rowValues.push(values[0]);
+  }
+
+  // create json
+  var jsonArray = [];
+  for(var i=0; i<rowValues.length; i++) {
+    var line = rowValues[i];
+    var json = new Object();
+    for(var j=0; j<titleColumns.length; j++) {
+      json[titleColumns[j]] = line[j];
+    }
+    jsonArray.push(json);
+  }
+  return jsonArray;
+}
+```
+
+Before we move on, we need to put your google sheet's ID in the code!
+
+- Click over to the spreadsheet we were building
+- Find the Google Sheet ID in the URL. It'll be a long string of characters between two `/`, like `1zPE0LQU2gQdrKaaD4mmm7oyW1JjSSqRbXA0Ypn_uGGx`
+- Copy that 
+- Click back to the script-building tab and paste it in the code in place of `YOUR_SHEET_ID` (but keep the quote marks).
+
+OK, let's get this running ...
+
+- Click the "Run" button
+- _If you get an error about a function being deleted, just ignore it and click Run again_
+- Click "Review permissions"
+- Choose your username
+- You're going to get a scary warning that Google hasn't verified the app.
+- Click the tiny "Advanced" link.
+- Click the "Go to Sheet2Json(unsafe)" link
+- Click "Allow"
+
+- Click the "Deploy" button
+- Pick "New Deployment"
+- Click on the gear icon
+- Pick "Web App"
+- Add a description
+- Change "Who has access" to `Anyone`
+- Click "Deploy"
+- Click on the "Web App" URL
+
+There's your spreadsheet in JSON format!
+
+
+### Build a "dog news" page
+
+- In Glitch make a new file in the `views` folder
+- Name it `news.html`
+- Paste Block 7 into this file
+
+**Block 8**
+
+[View Block 8 code here](https://gist.github.com/jkeefe/220a57606bb6ebd9b75d4e4f65679bad).
+
+### Make a route to the news page
+
+First we have to add some software to our code. This is a pre-made "library" that allows your Glitch project to go get data from another web service.
+
+- in the files list at the left, click on `package.json`
+- at the top of the project, click "Add package"
+- type "request"
+- chose that
+
+All set!
+
+OK, now we need to make our route.
+
+- in the files list at the left, click `server.js`
+- Open a little space aftr our last route (but _above_ the `---- Add routes above this line ----` line
+- We're going to add a new "route" called `/news`. Copy and paste Block 9 into this spot:
+
+**Block 9**
+
+```
+app.get('/news', function(req, resp) {
+  
+  const url = 'PUT_YOUR_GOOGLE_SCRIPT_URL_HERE'
+  const options = {json: true}
+  request(url, options, (error, res, body) => {
+    if (error) {
+        return  console.log(error)
+    };
+
+    if (!error && res.statusCode == 200) {
+        // do something with JSON, using the 'body' variable
+      
+      let data = {'stories': body}
+      
+      // NOTE! If your page isn't updating, try increasing
+      // this number by one. Just changing it makes the
+      // news.html page refresh
+      data.cachebust = 1
+         
+      resp.render('news.html', data)
+      console.log(data)
+    };
+        
+});
+```
+
+OK, in that code you just pasted, we need to change `PUT_YOUR_GOOGLE_SCRIPT_URL_HERE` to the JSON script for your spreadsheet. Go to that tab, copy the URL, and paste it over this `PUT_YOUR_GOOGLE_SCRIPT_URL_HERE` — making sure to keep the quote marks before and after.
+
+Now try adding `/news` to your live URL!
+
+Paste this full link into the Google Classroom assignment form to complete this week's homework.
+
+## Assignment
+
+_Check out Google Classroom for the "06 Assignment." You'll need the URL from the end of the video.  Do it now ... it's due on at high noon on the day of our next class._
+
+_If you get stuck_ try backing up and following my steps again. If you still can't get it to work, you have options:
+
+1. Go to the `#design-development` channel and provide a short description of what's not working and what you've already tried. 
+2. Join my "helpdesk hours" Wednesday at 12:30 pm. The link for that has been added to the syllabus and will be posted in the `#design-development` chat every Wednesday morning.
+
 <a name="class7"></a>
 <a name="class8"></a>
 <a name="class9"></a>

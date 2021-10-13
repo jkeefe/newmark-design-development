@@ -868,6 +868,15 @@ We did a review of IFTTT, Zapier, Google Alerts, and Klaxon to help you monitor 
 
 - Sometimes the data is there in a json file or via an api, under the hood
 
+
+### Scraping Example 1
+
+Drawn from a [Medium post by Julia Kho](https://towardsdatascience.com/how-to-web-scrape-with-python-in-4-minutes-bc49186a8460).
+
+Python notebook on Google Colab.
+
+### More exploration
+
 - [Great walk-through](https://www.dataquest.io/blog/web-scraping-tutorial-python/), using the weather service as an example.
 
 <a name="class11"></a>
