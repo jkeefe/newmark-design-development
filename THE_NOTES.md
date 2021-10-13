@@ -875,7 +875,7 @@ function convertSheet2JsonText(sheet) {
 Before we move on, we need to put your google sheet's ID in the code!
 
 - Click over to the spreadsheet we were building
-- Find the Google Sheet ID in the URL. It'll be a long string of characters between two `/`, like `1zPE0LQU2gQdrKaaD4mmm7oyW1JjSSqRbXA0Ypn_uGGx`
+- Find the Google Sheet ID in the sheet's URL. It'll be a long string of characters between two `/`, like `1zPE0LQU2gQdrKaaD4mmm7oyW1JjSSqRbXA0Ypn_uGGx`
 - Copy that 
 - Click back to the script-building tab and paste it in the code in place of `YOUR_SHEET_ID` (but keep the quote marks).
 
@@ -921,6 +921,14 @@ First we have to add some software to our code. This is a pre-made "library" tha
 - type "request"
 - chose that
 
+- OK, now switch to the file `server.js`
+- Make a little space after Line 9 near the top
+- Add this in the space (like on Line 11):
+
+```javascript
+const request = require('request');
+```
+
 All set!
 
 OK, now we need to make our route.
@@ -931,30 +939,29 @@ OK, now we need to make our route.
 
 **Block 9**
 
-```
-app.get('/news', function(req, resp) {
-  
-  const url = 'PUT_YOUR_GOOGLE_SCRIPT_URL_HERE'
-  const options = {json: true}
+```javascript
+app.get("/news", function(req, resp) {
+  const url = "PUT_YOUR_GOOGLE_SCRIPT_URL_HERE";
+  const options = { json: true };
   request(url, options, (error, res, body) => {
     if (error) {
-        return  console.log(error)
-    };
+      return console.log(error);
+    }
 
     if (!error && res.statusCode == 200) {
-        // do something with JSON, using the 'body' variable
-      
-      let data = {'stories': body}
-      
+      // do something with JSON, using the 'body' variable
+
+      let data = { stories: body };
+
       // NOTE! If your page isn't updating, try increasing
       // this number by one. Just changing it makes the
       // news.html page refresh
-      data.cachebust = 1
-         
-      resp.render('news.html', data)
-      console.log(data)
-    };
-        
+      data.cachebust = 1;
+
+      resp.render("news.html", data);
+      console.log(data);
+    }
+  });
 });
 ```
 
