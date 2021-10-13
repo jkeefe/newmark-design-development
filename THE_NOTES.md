@@ -901,20 +901,9 @@ OK, let's get this running ...
 
 There's your spreadsheet in JSON format!
 
-
-### Build a "dog news" page
-
-- In Glitch make a new file in the `views` folder
-- Name it `news.html`
-- Paste Block 7 into this file
-
-**Block 8**
-
-[View Block 8 code here](https://gist.github.com/jkeefe/220a57606bb6ebd9b75d4e4f65679bad).
-
 ### Add the "request" library to our project
 
-First we have to add some software to our code. This is a pre-made "library" that allows your Glitch project to go get data from another web service.
+First we have to add some software to our code. This is a pre-made "library" that allows your Glitch project to go get data from another web service — also known as making a _request_. That's why the library we are going to use is called "request." 
 
 - in the files list at the left, click on `package.json`
 - at the top of the project, click "Add package"
@@ -930,6 +919,18 @@ const request = require('request');
 ```
 
 All set!
+
+
+### Build a "dog news" page
+
+- In Glitch make a new file in the `views` folder
+- Name it `news.html`
+- Paste Block 7 into this file
+
+**Block 8**
+
+[View Block 8 code here](https://gist.github.com/jkeefe/220a57606bb6ebd9b75d4e4f65679bad).
+
 
 ### Make a route to the news page
 
