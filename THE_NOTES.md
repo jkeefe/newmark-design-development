@@ -805,6 +805,14 @@ To continue in the walkthrough, you should have the following tabs open in your 
 2. Your Glitch app
 3. A new, blank spreadsheet
 
+### Code walkthrough video!
+
+Note: If you don't get the "scary warning" I talk about during the authorization process, then just ignore that part of the video and click "Allow."
+
+<iframe src="https://player.vimeo.com/video/631470366?h=aa0e6516a6&title=0&byline=0&portrait=0" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/631470366">Design &amp; Development 2021 &bull; 06</a> from <a href="https://vimeo.com/jkeefe">John Keefe</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
 ### Turning your spreadsheet into an API
 
 - Start a new Google Sheet (Tip: You can do that quickly by typing the URL `sheets.new` into a browser)
@@ -881,15 +889,18 @@ Before we move on, we need to put your google sheet's ID in the code!
 
 OK, let's get this running ...
 
+- Click the "Save" button (the floppy disk icon)
 - Click the "Run" button
 - _If you get an error about a function being deleted, just ignore it and click Run again_
-- Click "Review permissions"
-- Choose your username
-- You're going to get a scary warning that Google hasn't verified the app.
-- Click the tiny "Advanced" link.
-- Click the "Go to Sheet2Json(unsafe)" link
-- Click "Allow"
 
+- _If get a scary warning about code not being authored by Google, do this_:
+    - Click "Review permissions"
+    - Choose your username
+    - You're going to get a scary warning that Google hasn't verified the app.
+    - Click the tiny "Advanced" link.
+    - Click the "Go to Sheet2Json(unsafe)" link
+
+- Click "Allow"
 - Click the "Deploy" button
 - Pick "New Deployment"
 - Click on the gear icon
