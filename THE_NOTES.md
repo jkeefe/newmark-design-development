@@ -936,7 +936,7 @@ All set!
 
 - In Glitch make a new file in the `views` folder
 - Name it `news.html`
-- Paste Block 7 into this file
+- Paste Block 8 into this file
 
 **Block 8**
 
@@ -995,6 +995,13 @@ _If you get stuck_ try backing up and following my steps again. If you still can
 2. Join my "helpdesk hours" Wednesday at 12:30 pm. The link for that has been added to the syllabus and will be posted in the `#design-development` chat every Wednesday morning.
 
 <a name="class7"></a>
+
+# Class 7 • Data security: For you, your sources, and your audience
+
+## Assignment
+
+_Check out Google Classroom for the "07 Assignment." You need to do one of the security steps John described, submit it and also post it in the #design-development Slack channel._
+
 <a name="class8"></a>
 <a name="class9"></a>
 <a name="class10"></a>
