@@ -1006,6 +1006,16 @@ _Check out Google Classroom for the "07 Assignment." You need to do one of the s
 
 ## Class 8 • Chatbots for collecting information in real time
 
+- Open your glitch projet
+- Click on the `server.js` file
+- Look for the `/dialogflow` route 
+- In that code, look for the line that says:
+```javascript
+var search_dog = request.body.queryResult.queryText;
+```
+- Make a blank lines after that line
+- Copy-paste this code block into that space:
+
 **Block 8A**
 
 ```javascript
@@ -1018,10 +1028,19 @@ fs.appendFile("searches.csv", data, err => {
 });
 ```
 - Open your chatbot at [dialogflow.cloud.google.com](dialogflow.cloud.google.com)
-- Test it in the upper right corner: "Hello" > "Lookup a dog name."
-- 
-
-csv-stringify
+- Test it in the upper right corner: "Hello" > "Lookup a dog name." > A dog's name
+- OK, back to glitch
+- Open the Terminal using the "Tools ^" button and then the "Terminal" button
+- Type `ls` for list files and hit enter. See the file there?
+- Type `cat searches.csv` and hit enter. See the log?
+- "X" out of the Terminal
+- To save the file to your own computer ...
+    - Click "Tools ^ " > "Import and Export"
+    - Scroll this window
+    - Click "Download project"
+- This will save a zip file to your downloads folder
+- Go open it
+- Look for `searches.csv`. This can be read by a spreadsheet program like Google Sheets
 
 
 

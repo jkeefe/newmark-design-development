@@ -74,20 +74,26 @@ We'll make sure you know how to use easy, free form software to collect informat
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class6">Notes for this class</a>.
 
-## Class 7 • Chatbots for collecting information in real time
+## Class 7 • Data security: For you, your sources, and your audience
 
-We'll mash up what you know about forms, chatbots, and Glitch to build a chatbot that asks questions and saves the answers. 
+Let's talk about security. We'll get into how you can start practicing better personal security and about how to act responsibly and ethically with the data you get from others.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class7">Notes for this class</a>.
 
+## Class 8 • Chatbots for collecting information in real time
 
-## Class 8 • Identifying and communicating your hopes and dreams
-
-Let's bring what we've learned so far into your community project. We'll outline what you hope to achieve, how it would work, and how you can scope out your ideas for someone else to help you build them.
+We'll mash up what you know about forms, chatbots, and Glitch to build a chatbot that asks questions and saves the answers. 
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class8">Notes for this class</a>.
 
-## Class 9 • Make bots to do your bidding
+
+## Class 9 • Identifying and communicating your hopes and dreams
+
+Let's bring what we've learned so far into your community project. We'll outline what you hope to achieve, how it would work, and how you can scope out your ideas for someone else to help you build them.
+
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class9">Notes for this class</a>.
+
+## Class 10 • Make bots to do your bidding
 
 - Every time a famous person tweets, put it in a spreadsheet
 - Every time it's at or below 32 degrees send a tweet
@@ -98,30 +104,23 @@ Let's bring what we've learned so far into your community project. We'll outline
 
 All of this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.
 
-<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class9">Notes for this class</a>.
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class10">Notes for this class</a>.
 
-## Class 10 • APIs, scraping and other data sources
+## Class 11 • APIs, scraping and other data sources
 
 Valuable data is everywhere. Let's get it. Weather info, crypto prices, earthquake alerts -- it's all available. We'll also run through web scraping and open-data mining.
 
-<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class10">Notes for this class</a>.
+<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>.
 
-## Class 11 • Sensors & Physical computing
+## Class 12 • Sensors & Physical computing
 
 Tiny computers can sense the environment, respond to your commands, and collect data that's not available anywhere else. They can even keep track of things when you're far away. Prototyping these kinds of products is surprisingly cheap and easy. We'll do it in class.
 
-<a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class11">Notes for this class</a>.
-
-## Class 12 • Intro to AI for journalism
-
-Artificial intelligence is a huge field, and the use of AI by corporations and governments is a huge issue in our society. The algorithms themselves, however, are not inherently problematic and can be used by responsible journalists to help in their investigations. We'll explore some of the services available and how you might use them for your journalism.
-
-
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class12">Notes for this class</a>.
 
-## Class 13 • Data security: For you, your sources, and your audience
+## Class 13 • Intro to AI for journalism
 
-Let's talk about security. We'll get into how you can start practicing better personal security and about how to act responsibly and ethically with the data you get from others.
+Artificial intelligence is a huge field, and the use of AI by corporations and governments is a huge issue in our society. The algorithms themselves, however, are not inherently problematic and can be used by responsible journalists to help in their investigations. We'll explore some of the services available and how you might use them for your journalism.
 
 <a href="https://keefe.cc/newmark-design-development/THE_NOTES.html#class13">Notes for this class</a>.
 
