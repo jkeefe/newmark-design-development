@@ -1013,8 +1013,8 @@ _Check out Google Classroom for the "07 Assignment." You need to do one of the s
 ```javascript
 var search_dog = request.body.queryResult.queryText;
 ```
-- Make a blank lines after that line
-- Copy-paste this code block into that space:
+- Make some blank lines after that line
+- Copy-paste this code Block 8A into that space:
 
 **Block 8A**
 
