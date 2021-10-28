@@ -1003,6 +1003,28 @@ _If you get stuck_ try backing up and following my steps again. If you still can
 _Check out Google Classroom for the "07 Assignment." You need to do one of the security steps John described, submit it and also post it in the #design-development Slack channel._
 
 <a name="class8"></a>
+
+## Class 8 • Chatbots for collecting information in real time
+
+**Block 8A**
+
+```javascript
+const data = Date() + "," + search_dog + "\n"
+
+fs.appendFile("searches.csv", data, err => {
+  if (err) {
+    console.log(err);
+  }
+});
+```
+- Open your chatbot at [dialogflow.cloud.google.com](dialogflow.cloud.google.com)
+- Test it in the upper right corner: "Hello" > "Lookup a dog name."
+- 
+
+csv-stringify
+
+
+
 <a name="class9"></a>
 <a name="class10"></a>
 <a name="class11"></a>
