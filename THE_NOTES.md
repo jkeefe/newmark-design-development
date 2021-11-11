@@ -1042,10 +1042,47 @@ fs.appendFile("searches.csv", data, err => {
 - Go open it
 - Look for `searches.csv`. This can be read by a spreadsheet program like Google Sheets
 
-
-
 <a name="class9"></a>
+
+# Class 9 • Identifying and communicating your hopes and dreams
+
+- Pitch it to the people who would help you make it
+- Get them interested in the purpose and impact
+
+- You have the expierience to know how the internet works
+- You've seen examples here and elsewhere
+- Think about a project you'd like to see happen. For real.
+
+- Worksheet / checklist ... for homework and the future
+
 <a name="class10"></a>
+
+## Class 10 • Make bots to do your bidding
+
+- Every time a famous person tweets, put it in a spreadsheet
+- Every time it's at or below 32 degrees send a tweet
+- Whenever someone posts on their blog, get an email
+- Whenever papers are filed in a court case, get an email 
+- When something happens in the digital world, make something happen in the physical world
+
+We did a review of IFTTT, Zapier, Google Alerts, and Klaxon to help you monitor the internet and collect data.
+
+### Links
+
+- [Google alerts](https://www.google.com/alerts)
+- [IFTTT](https://ifttt.com/home)
+    - [Federal Courts RSS feeds](https://pacer.uscourts.gov/file-case/court-cmecf-lookup)
+- [Zapier](https://zapier.com/app/dashboard)
+- [Klaxon](https://github.com/themarshallproject/klaxon)
+
+
+## Assignment
+
+1. Create a new applet/bot using IFTTT (at https://ifttt.com)
+2. Go to the applet's "settings"
+3. Take a screenshot of the area where I can see both the trigger and the action.
+4. Submit that screenshot using the Google Classroom assignment page.
+
 <a name="class11"></a>
 <a name="class12"></a>
 <a name="class13"></a>
