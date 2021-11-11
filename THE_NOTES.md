@@ -1057,7 +1057,7 @@ fs.appendFile("searches.csv", data, err => {
 
 <a name="class10"></a>
 
-## Class 10 • Make bots to do your bidding
+# Class 10 • Make bots to do your bidding
 
 - Every time a famous person tweets, put it in a spreadsheet
 - Every time it's at or below 32 degrees send a tweet
