@@ -866,8 +866,7 @@ We did a review of IFTTT, Zapier, Google Alerts, and Klaxon to help you monitor 
 
 ### Digging before scraping
 
-- Sometimes the data is there in a json file or via an api, under the hood
-
+- Sometimes the data is there in a json file or via an api, under the hood.
 
 ### Scraping Example 1
 

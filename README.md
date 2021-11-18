@@ -99,7 +99,6 @@ Let's bring what we've learned so far into your community project. We'll outline
 - Every time it's at or below 32 degrees send a tweet
 - Whenever someone posts on their blog, get an email
 - Whenever papers are filed in a court case, get an email 
-- Make Alexa tweet for you
 - When something happens in the digital world, make something happen in the physical world
 
 All of this and more is possible without any coding at all. We'll make theses mini-products and learn about mashing up existing services into new services that (maybe) never existed before.

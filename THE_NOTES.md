@@ -1084,6 +1084,132 @@ We did a review of IFTTT, Zapier, Google Alerts, and Klaxon to help you monitor 
 4. Submit that screenshot using the Google Classroom assignment page.
 
 <a name="class11"></a>
+
+# Class 11 • APIs, scraping and other data sources
+
+You've made an API!
+
+https://newmark-bark.glitch.me/name/juno
+
+Note that this is the _endpoint_ for our names API: 
+
+https://newmark-bark.glitch.me/name/
+
+And this is our "first 10" _endpoint_:
+
+https://newmark-bark.glitch.me/first10/
+
+
+## Using an API: Coinbase API + Google Spreadsheet
+
+- Going to use coinbase.com
+- The data we want is at this endpoint: https://api.coinbase.com/v2/prices/BTC-USD/spot
+- API info is: http://api.coinbase.com
+
+Let's load this into a Google Spreadsheet, just because we can.
+
+Steps:
+
+- Open a new Google spreadsheet: `sheets.new`
+- Name it "My Coinbase Sheet"
+- Go to Tools -> Script Editor
+- Name it "Fetch Coinbase Data"
+- Copy and paste this block of code into the main window:
+
+**Block 11-A**
+
+```
+function onOpen() {
+
+    // this code runs when the spreadsheet is opened
+    var ui = SpreadsheetApp.getUi();
+    ui.createMenu('API')
+      .addItem('Update Bitcoin','callCoinbase')
+      .addToUi();
+      
+}
+
+function callCoinbase() {
+
+    // Call coinbase for the latest data
+    var response = UrlFetchApp.fetch("https://api.coinbase.com/v2/prices/BTC-USD/spot");
+
+    var coinbase = JSON.parse(response.getContentText());
+    var sheet = SpreadsheetApp.getActiveSheet();
+    
+    sheet.getRange(1,1).setValue([coinbase.data.amount]);
+  
+}
+```
+
+Let's review the code.
+
+Then ... 
+
+- Save
+- Run
+- Authorize
+- Go back to the spreadsheet
+- There's a new item in the menu bar: "API"
+- Use "API" > "Update Bitcoin"
+
+More code snippets:
+
+Add the currency value ... by adding this line inside the callCoinbase function:
+
+```
+sheet.getRange(1,2).setValue([coinbase.data.currency]);
+```
+
+Add the timestamp!
+
+```
+sheet.getRange(1,3).setValue(Date());
+```
+
+Make it append to the end of the list ... (calculate the "row" as the last row plus 1) ... by replacing the current `sheet.getRange...` lines with these three:
+
+```
+var new_row = sheet.getLastRow() + 1;
+sheet.getRange(new_row, 1).setValue([coinbase.data.amount]);
+sheet.getRange(new_row, 2).setValue([coinbase.data.currency]);
+sheet.getRange(new_row, 3).setValue(Date());
+```
+
+### Extra info
+
+- Many more great google dashboard examples here: https://www.benlcollins.com/spreadsheets/starting-gas/
+- Also good dashboard info here: https://www.benlcollins.com/apps-script/beginner-apis/
+- Which is also here: https://github.com/benlcollins/apps_script_apis/blob/master/for_website/001_numbers.gs
+- Note we added in `JSON.parse(data)` to those examples
+
+## A custom earthquake page using USGS data
+
+- Here's the [origin video](https://www.youtube.com/watch?v=PaAKnWtCQZs)
+- USGS [data home page](https://www.usgs.gov/natural-hazards/earthquake-hazards/science/earthquake-data?qt-science_center_objects=0#qt-science_center_objects)
+- USGS [GeoJSON feeds](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
+- Here's the [site I made converting magnitude-moment scale to Meiers](https://meier-quake.glitch.me/)
+
+
+## Scraping-but-not-scraping
+
+- Sometimes the data is there in a json file or via an api, under the hood
+- Let's look at the [CDC's Covid Data Page](https://covid.cdc.gov/covid-data-tracker/#county-view)
+
+## Actual Scraping: 
+
+Drawn from a [Medium post by Julia Kho](https://towardsdatascience.com/how-to-web-scrape-with-python-in-4-minutes-bc49186a8460).
+
+Hop over to this [Python notebook on Google Colab](https://colab.research.google.com/drive/1p0D1XSyOcGQVl2D3akPHs_hptRu9AIPS#scrollTo=x38SGF92YhCM).
+
+### More exploration
+
+- [Great walk-through](https://www.dataquest.io/blog/web-scraping-tutorial-python/), using the weather service as an example.
+
+## Assignment
+
+_Check out Google Classroom for the "11 Assignment." Look for an API you want to use and fill out the form linked in that assignment._
+
 <a name="class12"></a>
 <a name="class13"></a>
 <a name="class14"></a>

@@ -828,10 +828,16 @@ function callCoinbase() {
 
 More code snippets:
 
-Add the currency value ...
+Add the currency value ... by adding this line inside the callCoinbase function:
 
 ```
 sheet.getRange(1,2).setValue([coinbase.data.currency]);
+```
+
+Add the timestamp!
+
+```
+sheet.getRange(1,3).setValue(Date());
 ```
 
 Make it append to the end of the list ... (calculate the "row" as the last row plus 1) ...
