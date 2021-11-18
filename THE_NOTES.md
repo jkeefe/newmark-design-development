@@ -1089,22 +1089,25 @@ We did a review of IFTTT, Zapier, Google Alerts, and Klaxon to help you monitor 
 
 You've made an API!
 
-https://newmark-bark.glitch.me/name/juno
+[https://newmark-bark.glitch.me/name/juno](https://newmark-bark.glitch.me/name/juno)
 
 Note that this is the _endpoint_ for our names API: 
 
+```
 https://newmark-bark.glitch.me/name/
+```
 
 And this is our "first 10" _endpoint_:
 
+```
 https://newmark-bark.glitch.me/first10/
-
+```
 
 ## Using an API: Coinbase API + Google Spreadsheet
 
 - Going to use coinbase.com
-- The data we want is at this endpoint: https://api.coinbase.com/v2/prices/BTC-USD/spot
-- API info is: http://api.coinbase.com
+- The data we want is at this endpoint: [https://api.coinbase.com/v2/prices/BTC-USD/spot](https://api.coinbase.com/v2/prices/BTC-USD/spot)
+- API info is: [http://api.coinbase.com](http://api.coinbase.com)
 
 Let's load this into a Google Spreadsheet, just because we can.
 
@@ -1178,9 +1181,9 @@ sheet.getRange(new_row, 3).setValue(Date());
 
 ### Extra info
 
-- Many more great google dashboard examples here: https://www.benlcollins.com/spreadsheets/starting-gas/
-- Also good dashboard info here: https://www.benlcollins.com/apps-script/beginner-apis/
-- Which is also here: https://github.com/benlcollins/apps_script_apis/blob/master/for_website/001_numbers.gs
+- Many more great [google dashboard examples](https://www.benlcollins.com/spreadsheets/starting-gas/) 
+- Also [good dashboard info](https://www.benlcollins.com/apps-script/beginner-apis/).
+- Which is also available at [another site](https://github.com/benlcollins/apps_script_apis/blob/master/for_website/001_numbers.gs).
 - Note we added in `JSON.parse(data)` to those examples
 
 ## A custom earthquake page using USGS data
